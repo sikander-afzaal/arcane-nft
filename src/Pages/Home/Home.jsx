@@ -4,6 +4,8 @@ import Hero from "./Hero/Hero.jsx";
 import Video from "./Video/Video.jsx";
 import Collect from "./Collect/Collect.jsx";
 import Collect2 from "./Collect2/Collect2.jsx";
+import QR from "./QR/QR.jsx";
+import Find from "./Find/Find.jsx";
 function Home() {
   return (
     <div className="home">
@@ -12,6 +14,10 @@ function Home() {
       <div className="shape-wrapper">
         <Collect />
         <Collect2 />
+        <div className="bg-triangle">
+          <Find />
+          <QR />
+        </div>
       </div>
     </div>
   );

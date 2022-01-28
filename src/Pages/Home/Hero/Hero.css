@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 80%;
+}
+.hero img {
+  max-width: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 600px) {
+  .hero {
+    margin-top: 0rem;
+  }
+}

@@ -1,0 +1,22 @@
+.video {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.vid {
+  max-width: 100%;
+  object-fit: contain;
+  clip-path: polygon(100% 0, 100% 0, 100% 50%, 100% 67%, 0 85%, 0 16%);
+}
+.play {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 558px) {
+  .play {
+    max-width: 18%;
+    object-fit: contain;
+  }
+}

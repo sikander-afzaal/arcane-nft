@@ -1,0 +1,30 @@
+.home,
+.shape-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+}
+.shape-wrapper {
+  background-image: url("../../Assets/hero-shape.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1600px) {
+  .home {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .home {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home {
+    margin-top: 2rem;
+  }
+}

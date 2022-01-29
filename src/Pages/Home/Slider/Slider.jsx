@@ -8,9 +8,7 @@ import img3 from "../../../Assets/s3.png";
 import img4 from "../../../Assets/s4.png";
 import star from "../../../Assets/star.svg";
 import eye from "../../../Assets/eye.svg";
-import left from "../../../Assets/left-arrow.png";
 import letter from "../../../Assets/a.svg";
-import right from "../../../Assets/right-arrow.png";
 function Slider() {
   return (
     <div className="slider">

@@ -7,6 +7,7 @@ import Collect2 from "./Collect2/Collect2.jsx";
 import QR from "./QR/QR.jsx";
 import Find from "./Find/Find.jsx";
 import Slider from "./Slider/Slider.jsx";
+import Status from "./Status/Status.jsx";
 function Home() {
   return (
     <div className="home">
@@ -17,6 +18,7 @@ function Home() {
         <Collect2 />
         <div className="bg-triangle-2">
           <Slider />
+          <Status />
         </div>
         <div className="bg-triangle">
           <Find />

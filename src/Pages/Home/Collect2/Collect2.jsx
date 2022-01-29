@@ -15,31 +15,31 @@ function Collect2() {
     <div className="collect2">
       <div data-aos="fade-right" className="collect2_left">
         <img src={shape} alt="" />
-        <div className="collect-box shadow1">
+        <div data-text="wallet" className="collect-box">
           <img src={img6} alt="" />
           <p>WALLET</p>
         </div>
-        <div className="collect-box">
+        <div data-text="meta" className="collect-box">
           <img src={img3} alt="" />
           <p>METAVERSE</p>
         </div>
-        <div className="collect-box">
+        <div data-text="store" className="collect-box">
           <img src={img} alt="" />
           <p>STORE</p>
         </div>
-        <div className="collect-box">
+        <div data-text="box" className="collect-box">
           <img src={img5} alt="" />
           <p>MYSTERY BOX</p>
         </div>
-        <div className="collect-box">
+        <div data-text="mobile" className="collect-box">
           <img src={img4} alt="" />
           <p>MOBILE</p>
         </div>
-        <div className="collect-box">
+        <div data-text="cards" className="collect-box">
           <img src={img2} alt="" />
           <p>CARDS</p>
         </div>
-        <div className="collect-box">
+        <div data-text="sword" className="collect-box">
           <img src={img7} alt="" />
           <p>SWORD</p>
         </div>

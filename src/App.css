@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 @font-face {
   font-family: "Arcane Nine";
@@ -165,4 +166,16 @@ span {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+}
+header * {
+  overflow-x: visible;
+}
+.collect * {
+  overflow-x: visible;
+}
+.collect2 * {
+  overflow-x: visible;
+}
+.shape-wrapper * {
+  overflow-x: visible;
 }

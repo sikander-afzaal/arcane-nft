@@ -52,6 +52,14 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 900px) {
+  .home {
+    width: 100%;
+  }
+  .bg-triangle-2 {
+    padding-top: 10rem;
+  }
+}
 @media screen and (max-width: 600px) {
   .home {
     margin-top: 2rem;

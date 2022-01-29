@@ -14,7 +14,11 @@ import right from "../../../Assets/right-arrow.png";
 function Slider() {
   return (
     <div className="slider">
-      <div className="find-top road-top">
+      <div
+        data-aos="fade-down"
+        style={{ marginBottom: "6rem" }}
+        className="find-top road-top"
+      >
         <h1 className="big">COLLECT THEM ALL</h1>
         <h1 className="small">COLLECT THEM ALL</h1>
       </div>
@@ -25,13 +29,14 @@ function Slider() {
           type: "loop",
           rewind: true,
           loop: true,
-          perPage: 3,
+          perPage: 4,
           height: "auto",
           width: "100%",
           arrows: true,
           focus: "center",
           pagination: false,
           drag: true,
+          pauseOnHover: true,
           breakpoints: {
             1000: {
               width: "100%",
@@ -118,8 +123,45 @@ function Slider() {
             </div>
           </div>
         </SplideSlide>
+        <SplideSlide>
+          <div className="slide-box green">
+            <div className="slide-box-top">
+              <img src={img1} alt="" />
+            </div>
+            <div className="slide-box-mid">
+              <h2>ARC</h2>
+              <img src={eye} alt="" />
+            </div>
+            <div className="slide-box-last">
+              <div className="star-div">
+                <img src={star} alt="" />
+              </div>
+              <p className="rarity">Gold Arcane</p>
+            </div>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div className="slide-box purple">
+            <div className="slide-box-top">
+              <img src={img4} alt="" />
+            </div>
+            <div className="slide-box-mid">
+              <h2>ARC</h2>
+              <img src={eye} alt="" />
+            </div>
+            <div className="slide-box-last">
+              <div className="star-div">
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+                <img src={star} alt="" />
+              </div>
+              <p className="rarity">Gold Arcane</p>
+            </div>
+          </div>
+        </SplideSlide>
       </Splide>
-      <button>
+      <button data-aos="fade-up">
         <img src={letter} alt="" /> COMING SOON
       </button>
     </div>

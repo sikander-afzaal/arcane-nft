@@ -4,10 +4,10 @@ import code from "../../../Assets/code.png";
 function QR() {
   return (
     <div className="qr">
-      <div className="left-qr">
+      <div data-aos="fade-right" className="left-qr">
         <img src={code} alt="" />
       </div>
-      <div className="right-qr">
+      <div data-aos="fade-left" className="right-qr">
         <h1>Join our official Telegram</h1>
         <p>
           The mystery box will be available for $10, <br></br> each box will

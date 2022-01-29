@@ -9,6 +9,19 @@
 .hero img {
   max-width: 100%;
   object-fit: contain;
+  transform: translateY(100px);
+  opacity: 0;
+  animation: up 1s ease-in-out 0.1s forwards;
+}
+@keyframes up {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 600px) {
   .hero {

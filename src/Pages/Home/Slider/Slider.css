@@ -13,10 +13,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 78%;
+  width: 80%;
   border-radius: 25px;
   gap: 20px;
   padding: 1.5rem 2rem;
+  margin: 1rem 0rem;
 }
 .slide-box-top {
   width: 100%;
@@ -39,18 +40,22 @@
 .yellow {
   color: #d1c302;
   background-color: #fff8e5;
+  box-shadow: 6px 0px 20px 5px #eff7c5;
 }
 .blue {
   background-color: #e1ffff;
   color: #34aff4;
+  box-shadow: 6px 0px 20px 5px #bdfbff;
 }
 .purple {
   background-color: #f3ebff;
   color: #8157cb;
+  box-shadow: 6px 0px 20px 5px #eedbfa;
 }
 .green {
   background-color: #c3e8e1;
   color: #53cf96;
+  box-shadow: 6px 0px 20px 5px #a7ecd4;
 }
 .yellow .rarity {
   background-color: #feedb4;

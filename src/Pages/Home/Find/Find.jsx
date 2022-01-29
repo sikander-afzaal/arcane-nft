@@ -10,11 +10,11 @@ import comp7 from "../../../Assets/Elements-89.png";
 function Find() {
   return (
     <div className="find">
-      <div className="find-top">
+      <div data-aos="fade-down" className="find-top">
         <h1 className="big">FIND ARCANE ON</h1>
         <h1 className="small">FIND ARCANE ON</h1>
       </div>
-      <div className="find-bottom">
+      <div data-aos="fade-up" data-aos-delay="1000" className="find-bottom">
         <img src={comp} alt="" className="comp" />
         <img src={comp2} alt="" className="comp" />
         <img src={comp3} alt="" className="comp" />

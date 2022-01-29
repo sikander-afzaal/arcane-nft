@@ -14,6 +14,22 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.bg-triangle-2 {
+  background-image: url("../../Assets//bg_shape.png");
+  mix-blend-mode: multiply;
+  padding-top: 26rem;
+  min-height: 100vh;
+  padding-bottom: 6rem;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .bg-triangle {
   background-image: url("../../Assets//find-bg.png");
   mix-blend-mode: multiply;
@@ -28,7 +44,7 @@
 }
 @media screen and (max-width: 1600px) {
   .home {
-    width: 95%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1140px) {

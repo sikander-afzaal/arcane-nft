@@ -1,0 +1,134 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+}
+.slide-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 78%;
+  border-radius: 25px;
+  gap: 20px;
+  padding: 1.5rem 2rem;
+}
+.slide-box-top {
+  width: 100%;
+}
+.slide-box-top img {
+  max-width: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.slide-box-mid,
+.slide-box-last {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.slide-box-mid h2 {
+  color: inherit;
+}
+.yellow {
+  color: #d1c302;
+  background-color: #fff8e5;
+}
+.blue {
+  background-color: #e1ffff;
+  color: #34aff4;
+}
+.purple {
+  background-color: #f3ebff;
+  color: #8157cb;
+}
+.green {
+  background-color: #c3e8e1;
+  color: #53cf96;
+}
+.yellow .rarity {
+  background-color: #feedb4;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+.blue .rarity {
+  background-color: #bceaf8;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+.green .rarity {
+  background-color: #feedb4;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+.purple .rarity {
+  background-color: #f4c4e3;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+.rarity {
+  color: inherit;
+}
+.splide__arrow {
+  top: 100% !important;
+  width: 6em !important;
+  height: 6em !important;
+  background-color: white !important;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 50% !important;
+}
+.splide__arrow svg {
+  font-size: 22px !important;
+}
+.splide__arrow--prev {
+  left: 1em !important;
+}
+.splide__arrow--next {
+  right: 1em !important;
+}
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splide {
+  height: 55vh !important;
+}
+.slider button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+  background-color: #00c8f7;
+  border-radius: 27px;
+  box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.4);
+  padding: 5px 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1643px) {
+  .splide__arrow--prev {
+    left: 1em !important;
+  }
+  .splide__arrow--next {
+    right: 1em !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .splide__arrow {
+    top: 80% !important;
+  }
+}
+@media screen and (max-width: 652px) {
+  .splide__arrow {
+    width: 4em !important;
+    height: 4em !important;
+    top: 90% !important;
+  }
+}

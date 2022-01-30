@@ -53,9 +53,11 @@ function Header() {
             }}
             className="cross"
           >
-            <a href="#">
-              <i className="far fa-times"></i>
+            <a className="connect-wallet" href="#">
+              <img src={wallet} alt="img" />
+              <span>Connect Wallet</span>
             </a>
+            <i className="far fa-times"></i>
           </li>
 
           <li className="bottom-border">

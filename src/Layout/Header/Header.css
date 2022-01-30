@@ -215,7 +215,7 @@ header .menu li:last-child a {
 }
 @media screen and (max-width: 1224px) {
   header .menu li a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-right: 1.9rem;
   }
   .menu .header_arcane_box a,
@@ -238,7 +238,7 @@ header .menu li:last-child a {
     padding: 1rem 0rem;
     width: 100%;
     border-bottom: 2px solid lightgray;
-    margin: 0;
+    margin-top: 2rem !important;
   }
   .mobile-menu .icon-div {
     width: 100%;
@@ -287,6 +287,9 @@ header .menu li:last-child a {
   .mobile-menu {
     display: flex !important;
   }
+  header {
+    z-index: 10;
+  }
   .menu {
     position: fixed;
     height: 100%;
@@ -294,18 +297,19 @@ header .menu li:last-child a {
     background-color: #fff;
     text-align: center;
     top: 0;
-    left: -1000%;
+    right: -1000%;
     z-index: 1025;
     padding-top: 7rem;
     transition: 0.4s;
     justify-content: flex-start !important;
     flex-direction: column;
+    padding-top: 9rem;
   }
   .index_dark .menu {
     background-color: #313131;
   }
   .menu.current {
-    left: 0;
+    right: 0;
   }
   header .menu li {
     display: block;
@@ -350,14 +354,17 @@ header .menu li:last-child a {
     opacity: 1;
   }
   .cross {
-    display: block !important;
+    display: flex !important;
     position: absolute;
-    right: 2rem;
+    right: 10%;
     top: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
   }
-  .cross a {
-    font-size: 3.5rem;
-    color: #00498a;
+  .cross i {
+    color: black;
+    font-size: 2.5rem;
     font-weight: 500;
   }
   .header_connect img {

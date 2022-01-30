@@ -14,11 +14,27 @@ function Footer() {
         <div className="social-div-footer">
           <p>Arcane Token Copyrights 2022®</p>
           <div className="icon-div">
-            <img className="social-icon" src={icon1} alt="" />
-            <img className="social-icon" src={icon2} alt="" />
-            <img className="social-icon" src={icon3} alt="" />
-            <img className="social-icon" src={icon4} alt="" />
-            <img className="social-icon" src={icon5} alt="" />
+            <a target={"blank"} href="https://t.me/ArcaneTokenBNB">
+              <img className="social-icon" src={icon1} alt="" />
+            </a>
+            <a target={"blank"} href="https://twitter.com/arcanetokenbnb?s=21">
+              <img className="social-icon" src={icon2} alt="" />
+            </a>
+            <a
+              target={"blank"}
+              href="https:instagram.com/arcanetokenbnb?utm_medium=copy_link"
+            >
+              <img className="social-icon" src={icon3} alt="" />
+            </a>
+            <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
+              <img className="social-icon" src={icon5} alt="" />
+            </a>
+            <a
+              target={"blank"}
+              href="https://youtube.com/channel/UCovNe7JAkU6OCucOf0SOQZw"
+            >
+              <img className="social-icon" src={icon4} alt="" />
+            </a>
           </div>
         </div>
       </div>

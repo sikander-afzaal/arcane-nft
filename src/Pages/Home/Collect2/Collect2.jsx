@@ -120,11 +120,10 @@ function Collect2() {
       </div>
       <div className="collect2_right">
         <div data-aos="fade-left" className="right_top-collect">
-          <h2>NEKOVERSE</h2>
+          <h2>ARCANE STATION</h2>
           <p>
-            The mystery box will be available for $10, each box will have either
-            of Five different NFT rarities. Holders will be able to sell their
-            NFTs on Arcane Market Place.
+            Arcane station will feture both live projects, and future projects.
+            To have an idea of what Arcane team is working on.
           </p>
         </div>
         <div data-aos="fade-up" data-aos-delay="1000" className="right-box">

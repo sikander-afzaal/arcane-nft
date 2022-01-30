@@ -8,7 +8,7 @@ function Collect() {
         <img src={img} alt="" />
       </div>
       <div data-aos="fade-left" data-aos-delay="1000" className="collect_right">
-        <h2>COLLECT NFTs In mystery box</h2>
+        <h2>MYSTERY BOX</h2>
         <p>
           The mystery box will be available for $10, each box will have either
           of Five different NFT rarities. Holders will be able to sell their

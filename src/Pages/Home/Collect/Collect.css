@@ -9,6 +9,24 @@
 .collect_left img {
   max-width: 100%;
   object-fit: contain;
+  animation: bounce 2s infinite alternate linear;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(10px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 .collect_right {
   display: flex;

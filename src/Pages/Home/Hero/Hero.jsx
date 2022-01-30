@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import bg from "../../../Assets/hero_img.svg";
+import bg from "../../../Assets/PC.png";
+import bg2 from "../../../Assets/Mobile.png";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 function Hero() {
@@ -22,13 +23,16 @@ function Hero() {
         }}
       >
         <SplideSlide>
-          <img src={bg} alt="" />
+          <img className="desktop-bg" src={bg} alt="" />
+          <img className="mobile-bg" src={bg2} alt="" />
         </SplideSlide>
         <SplideSlide>
-          <img src={bg} alt="" />
+          <img className="desktop-bg" src={bg} alt="" />
+          <img className="mobile-bg" src={bg2} alt="" />
         </SplideSlide>
         <SplideSlide>
-          <img src={bg} alt="" />
+          <img className="desktop-bg" src={bg} alt="" />
+          <img className="mobile-bg" src={bg2} alt="" />
         </SplideSlide>
       </Splide>
     </div>

@@ -10,9 +10,8 @@ function QR() {
       <div data-aos="fade-left" className="right-qr">
         <h1>Join our official Telegram</h1>
         <p>
-          The mystery box will be available for $10, <br></br> each box will
-          have either of Five different NFT rarities. Holders will be able to
-          sell their NFTs on <br></br> Arcane Market Place.
+          Join our Telegram group to get all news about the project, have some
+          insights before anyone else, and have fun with the community
         </p>
       </div>
     </div>

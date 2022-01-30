@@ -72,5 +72,6 @@
   }
   .collect_right {
     align-items: center;
+    text-align: center;
   }
 }

@@ -234,8 +234,41 @@ header .menu li:last-child a {
   .mobile-connect {
     display: flex;
   }
+  .bottom-border {
+    padding: 1rem 0rem;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+    margin: 0;
+  }
+  .mobile-menu .icon-div {
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+  }
   .switch {
     display: none !important;
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+  }
+  .bottom-bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+  .bottom .switch {
+    margin-right: 0rem;
+  }
+  .bottom-bottom .header_arcane_box a {
+    font-size: 1.2rem !important;
   }
   .header_connect .arcane-box-mobile {
     display: flex;

@@ -58,63 +58,68 @@ function Header() {
             </a>
           </li>
 
-          <li>
+          <li className="bottom-border">
             <a href="#">HOME</a>
           </li>
-          <li>
+          <li className="bottom-border">
             <a href="#">PROFILE</a>
           </li>
-          <li>
+          <li className="bottom-border">
             <a href="#">THE TOKEN</a>
           </li>
-          <li>
+          <li className="bottom-border">
             <a href="#">MYSTERY BOX</a>
           </li>
-          <li>
+          <li className="bottom-border">
             <a href="#">MARKET PLACE</a>
           </li>
-          <li>
+          <li className="bottom-border">
             <a href="#">HELP</a>
           </li>
-          <li className="header_arcane_box">
-            <a href="#">1$ = 0.012829 Arcane </a>
-          </li>
-          <li
-            onClick={() => {
-              setDark((prev) => !prev);
-            }}
-            className={`switch switch-mobile ${darkMode ? "active" : ""}`}
-          >
-            <img src={light} alt="" />
-            <img src={dark} alt="" />
-          </li>
-          <li>
-            <div className="social-div-footer mobile-menu">
-              <div className="icon-div">
-                <a target={"blank"} href="https://t.me/ArcaneTokenBNB">
-                  <img className="social-icon" src={icon1} alt="" />
-                </a>
-                <a
-                  target={"blank"}
-                  href="https://twitter.com/arcanetokenbnb?s=21"
-                >
-                  <img className="social-icon" src={icon2} alt="" />
-                </a>
-                <a
-                  target={"blank"}
-                  href="https:instagram.com/arcanetokenbnb?utm_medium=copy_link"
-                >
-                  <img className="social-icon" src={icon3} alt="" />
-                </a>
-                <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
-                  <img className="social-icon" src={icon5} alt="" />
-                </a>
-                <a
-                  target={"blank"}
-                  href="https://youtube.com/channel/UCovNe7JAkU6OCucOf0SOQZw"
-                >
-                  <img className="social-icon" src={icon4} alt="" />
-                </a>
+
+          <li className="bottom">
+            <div className="top-bottom">
+              <div className="social-div-footer mobile-menu">
+                <div className="icon-div">
+                  <a target={"blank"} href="https://t.me/ArcaneTokenBNB">
+                    <img className="social-icon" src={icon1} alt="" />
+                  </a>
+                  <a
+                    target={"blank"}
+                    href="https://twitter.com/arcanetokenbnb?s=21"
+                  >
+                    <img className="social-icon" src={icon2} alt="" />
+                  </a>
+                  <a
+                    target={"blank"}
+                    href="https:instagram.com/arcanetokenbnb?utm_medium=copy_link"
+                  >
+                    <img className="social-icon" src={icon3} alt="" />
+                  </a>
+                  <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
+                    <img className="social-icon" src={icon5} alt="" />
+                  </a>
+                  <a
+                    target={"blank"}
+                    href="https://youtube.com/channel/UCovNe7JAkU6OCucOf0SOQZw"
+                  >
+                    <img className="social-icon" src={icon4} alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="bottom-bottom">
+              <div className="header_arcane_box">
+                <a href="#">1$ = 0.012829 Arcane </a>
+              </div>
+              <div
+                onClick={() => {
+                  setDark((prev) => !prev);
+                }}
+                className={`switch switch-mobile ${darkMode ? "active" : ""}`}
+              >
+                <img src={light} alt="" />
+                <img src={dark} alt="" />
               </div>
             </div>
           </li>

@@ -8,10 +8,11 @@ header {
   border-radius: 35px;
   box-shadow: 0px 0px 50px -20px #00f6ff;
   margin-top: 2rem;
-}
-
-header {
   background-color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+.mobile-menu {
+  display: none !important;
 }
 .header img {
   max-width: 100%;
@@ -68,6 +69,10 @@ header .menu li:last-child a {
   font-weight: bold;
   justify-content: center;
 }
+.connect-wallet img {
+  max-width: 15%;
+  object-fit: contain;
+}
 .header_connect {
   display: flex;
   justify-content: flex-end;
@@ -92,12 +97,31 @@ header .menu li:last-child a {
   background-color: #f3fcff;
   border-radius: 2.1rem;
 }
+.scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-radius: 0;
+  margin-top: 0;
+}
 /*======================
   Hamburger-menu style
 ========================*/
 .hamburger-menu {
   cursor: pointer;
   display: none;
+}
+.desktop-connect {
+  display: flex;
+}
+.mobile-connect {
+  display: none;
+}
+.right-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .hamburger-menu span {
   background: #00498a;
@@ -204,6 +228,12 @@ header .menu li:last-child a {
   }
 }
 @media screen and (max-width: 1140px) {
+  .desktop-connect {
+    display: none;
+  }
+  .mobile-connect {
+    display: flex;
+  }
   .switch {
     display: none !important;
   }
@@ -220,6 +250,9 @@ header .menu li:last-child a {
   .arcane-box-mobile a {
     color: #3adf00 !important;
     text-decoration: none;
+  }
+  .mobile-menu {
+    display: flex !important;
   }
   .menu {
     position: fixed;

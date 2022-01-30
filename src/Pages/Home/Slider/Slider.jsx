@@ -74,7 +74,7 @@ function Slider() {
   };
   return (
     <div className="slider">
-      <div className={`overlay ${open ? "down" : ""}`}></div>
+      <div className={`overlay-2 ${open ? "down" : ""}`}></div>
       <div className={`open-box-slider ${open ? "down-box" : ""}`}>
         <i
           onClick={() => {

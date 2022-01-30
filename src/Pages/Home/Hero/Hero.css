@@ -1,3 +1,6 @@
+.hero * {
+  overflow-x: visible;
+}
 .hero {
   display: flex;
   justify-content: center;
@@ -9,18 +12,22 @@
 .hero img {
   max-width: 100%;
   object-fit: contain;
-  transform: translateY(100px);
-  opacity: 0;
-  animation: up 1s ease-in-out 0.1s forwards;
 }
-@keyframes up {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
+.splide__pagination {
+  bottom: 17% !important;
+  left: 80% !important;
+}
+.splide__pagination__page.is-active {
+  background: black !important;
+}
+.splide__pagination__page {
+  height: 12px !important;
+  width: 12px !important;
+}
+@media screen and (max-width: 728px) {
+  .splide__pagination {
+    bottom: 12% !important;
+    left: 70% !important;
   }
 }
 @media screen and (max-width: 600px) {

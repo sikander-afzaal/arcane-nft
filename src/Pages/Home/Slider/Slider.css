@@ -102,9 +102,9 @@
   align-items: center;
   justify-content: center;
 }
-.splide {
+/* .splide {
   height: 55vh !important;
-}
+} */
 .slider button {
   display: flex;
   justify-content: center;

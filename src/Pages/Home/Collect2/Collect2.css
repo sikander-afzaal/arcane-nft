@@ -159,6 +159,9 @@
   border-radius: 30px;
   box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.4);
   padding: 0px 30px 30px 30px;
+  transform: translateY(-40px);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 .box-top {
   justify-content: flex-start;
@@ -195,6 +198,10 @@
 }
 .mobile-box {
   display: none;
+}
+.fading {
+  opacity: 1;
+  transform: translateY(0px);
 }
 @media screen and (max-width: 1300px) {
   .collect2_right .right_top-collect h2 {
@@ -260,8 +267,8 @@
     width: 25%;
   }
   .collect-box:nth-of-type(1) {
-    left: 6%;
-    top: 2%;
+    left: 7%;
+    top: -2%;
   }
   .collect-box:nth-of-type(2) {
     left: 37%;

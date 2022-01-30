@@ -64,6 +64,8 @@ header .menu li:last-child a {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
+  gap: 10px;
+  font-weight: bold;
   justify-content: center;
 }
 .header_connect {
@@ -222,7 +224,7 @@ header .menu li:last-child a {
   .menu {
     position: fixed;
     height: 100%;
-    width: 100%;
+    width: 60%;
     background-color: #fff;
     text-align: center;
     top: 0;
@@ -327,5 +329,8 @@ header .menu li:last-child a {
 @media screen and (max-width: 443px) {
   .left-header {
     width: 23%;
+  }
+  .menu {
+    width: 80%;
   }
 }

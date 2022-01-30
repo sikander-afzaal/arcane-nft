@@ -179,3 +179,9 @@ header * {
 .shape-wrapper * {
   overflow-x: visible;
 }
+.dark {
+  background-color: #262626;
+}
+.bg {
+  background-image: none !important;
+}

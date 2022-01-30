@@ -77,13 +77,23 @@ function Collect2() {
             NFTs on Arcane Market Place.`);
   const clickHandler = (e) => {
     const dataSet = e.target.dataset.text;
-    data.forEach((item) => {
-      if (item.identifier === dataSet) {
-        setImg(item.img);
-        setName(item.name);
-        setDesc(item.desc);
-      }
+    document.querySelectorAll(".fading").forEach((elem) => {
+      elem.classList.remove("fading");
     });
+    setTimeout(() => {
+      document.querySelectorAll(".right-box").forEach((elem) => {
+        elem.classList.add("fading");
+      });
+    }, 500);
+    setTimeout(() => {
+      data.forEach((item) => {
+        if (item.identifier === dataSet) {
+          setImg(item.img);
+          setName(item.name);
+          setDesc(item.desc);
+        }
+      });
+    }, 300);
   };
   return (
     <div className="collect2">
@@ -126,7 +136,7 @@ function Collect2() {
             To have an idea of what Arcane team is working on.
           </p>
         </div>
-        <div data-aos="fade-up" data-aos-delay="1000" className="right-box">
+        <div className="right-box fading">
           <div className="box-top">
             <img src={imgstate} alt="" />
             <p>{name}</p>
@@ -137,11 +147,7 @@ function Collect2() {
           </button>
         </div>
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-delay="1000"
-        className="right-box mobile-box"
-      >
+      <div className="right-box mobile-box fading">
         <div className="box-top">
           <img src={imgstate} alt="" />
           <p>{name}</p>

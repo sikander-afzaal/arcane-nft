@@ -18,6 +18,10 @@ function Header() {
         <ul className={`menu ${active ? "current" : ""}`}>
           <li
             onClick={() => {
+              // document.querySelector("body").classList.toggle("dark");
+              // document.querySelector(".shape-wrapper").classList.toggle("bg");
+              // document.querySelector(".bg-triangle-2").classList.toggle("bg");
+              // document.querySelector(".bg-triangle").classList.toggle("bg");
               setDark((prev) => !prev);
             }}
             className={`switch ${darkMode ? "active" : ""}`}

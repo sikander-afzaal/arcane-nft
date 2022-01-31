@@ -4,11 +4,8 @@ import dark from "../../Assets/dark.png";
 import light from "../../Assets/light1.png";
 import wallet from "../../Assets/wallet.png";
 import "./Header.css";
-import icon1 from "../../Assets/social1.png";
-import icon2 from "../../Assets/social2.png";
-import icon3 from "../../Assets/social3.png";
-import icon4 from "../../Assets/social4.png";
-import icon5 from "../../Assets/social5.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 function Header() {
   const [darkMode, setDark] = useState(false);
   const [active, setActive] = useState(false);
@@ -131,13 +128,17 @@ function Header() {
                     <i className="fab fa-instagram"></i>
                   </a>
                   <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
-                    <i className="fab fa-youtube"></i>
+                    <FontAwesomeIcon
+                      style={{ fontSize: " 2.5rem" }}
+                      icon={faTiktok}
+                    />
                   </a>
                   <a
                     target={"blank"}
                     href="https://youtube.com/channel/UCovNe7JAkU6OCucOf0SOQZw"
                   >
-                    <i className="fab fa-facebook-square"></i>
+                    {" "}
+                    <i className="fab fa-youtube"></i>
                   </a>
                 </div>
               </div>

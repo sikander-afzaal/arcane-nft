@@ -3,6 +3,7 @@ import logo from "../../Assets/logo.svg";
 import dark from "../../Assets/dark.png";
 import light from "../../Assets/light1.png";
 import wallet from "../../Assets/wallet.png";
+import hamburger from "../../Assets/social/Elements-129.png";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
@@ -56,6 +57,9 @@ function Header() {
               document.querySelector(".shape-wrapper").classList.toggle("bg");
               document.querySelector(".bg-triangle-2").classList.toggle("bg");
               document.querySelector(".bg-triangle").classList.toggle("bg");
+              document.querySelectorAll(".right-desc p").forEach((item) => {
+                item.classList.toggle("white");
+              });
               document
                 .querySelector(".right_top-collect p")
                 .classList.toggle("white");
@@ -162,6 +166,9 @@ function Header() {
                   document.querySelectorAll(".big").forEach((elem) => {
                     elem.classList.toggle("font-color2");
                   });
+                  document.querySelectorAll(".right-desc p").forEach((item) => {
+                    item.classList.toggle("white");
+                  });
                   document
                     .querySelector(".shape-wrapper")
                     .classList.toggle("bg");
@@ -209,16 +216,15 @@ function Header() {
           <img src={wallet} alt="img" />
           <span>Connect Wallet</span>
         </a>
-        <div
+
+        <img
+          className="hamburger mobile-connect"
           onClick={() => {
             setActive((prev) => !prev);
           }}
-          className={`hamburger-menu ${active ? "current" : ""}`}
-        >
-          <span className={`line-top ${active ? "current" : ""}`}></span>
-          <span className={`line-center ${active ? "current" : ""}`}></span>
-          <span className={`line-bottom ${active ? "current" : ""}`}></span>
-        </div>
+          src={hamburger}
+          alt=""
+        />
       </div>
 
       {/* <!-- overlay --> */}

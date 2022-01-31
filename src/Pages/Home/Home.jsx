@@ -8,6 +8,7 @@ import QR from "./QR/QR.jsx";
 import Find from "./Find/Find.jsx";
 import Slider from "./Slider/Slider.jsx";
 import Status from "./Status/Status.jsx";
+import Season from "./Seasons/Season.jsx";
 function Home() {
   return (
     <div className="home">
@@ -17,6 +18,7 @@ function Home() {
         <Collect />
         <Collect2 />
         <div className="bg-triangle-2">
+          <Season />
           <Slider />
           <Status />
         </div>

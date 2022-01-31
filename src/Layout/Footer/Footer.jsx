@@ -1,11 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../Assets/logo.svg";
-import icon1 from "../../Assets/social1.png";
-import icon2 from "../../Assets/social2.png";
-import icon3 from "../../Assets/social3.png";
-import icon4 from "../../Assets/social4.png";
-import icon5 from "../../Assets/social5.png";
+import youtube from "../../Assets/social/Elements-123.png";
+import insta from "../../Assets/social/Elements-124.png";
+import twitter from "../../Assets/social/Elements-125.png";
+import tiktok from "../../Assets/social/Elements-126.png";
+import telegram from "../../Assets/social/Elements-127.png";
 function Footer() {
   return (
     <div className="footer">
@@ -15,25 +15,25 @@ function Footer() {
           <p>Arcane Token Copyrights 2022®</p>
           <div className="icon-div">
             <a target={"blank"} href="https://t.me/ArcaneTokenBNB">
-              <img className="social-icon" src={icon1} alt="" />
+              <img className="social-icon" src={telegram} alt="" />
             </a>
             <a target={"blank"} href="https://twitter.com/arcanetokenbnb?s=21">
-              <img className="social-icon" src={icon2} alt="" />
+              <img className="social-icon" src={twitter} alt="" />
             </a>
             <a
               target={"blank"}
               href="https:instagram.com/arcanetokenbnb?utm_medium=copy_link"
             >
-              <img className="social-icon" src={icon3} alt="" />
+              <img className="social-icon" src={insta} alt="" />
             </a>
             <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
-              <img className="social-icon" src={icon5} alt="" />
+              <img className="social-icon" src={tiktok} alt="" />
             </a>
             <a
               target={"blank"}
               href="https://youtube.com/channel/UCovNe7JAkU6OCucOf0SOQZw"
             >
-              <img className="social-icon" src={icon4} alt="" />
+              <img className="social-icon" src={youtube} alt="" />
             </a>
           </div>
         </div>

@@ -14,6 +14,10 @@ header {
 .mobile-menu {
   display: none !important;
 }
+.logo-area img {
+  max-width: 90%;
+  object-fit: contain;
+}
 .header img {
   max-width: 100%;
   object-fit: contain;
@@ -39,7 +43,7 @@ header .menu li {
   display: inline-block;
 }
 header .menu li a {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #00498a;
   margin-right: 1.9rem;
@@ -50,7 +54,7 @@ header .menu li:last-child a {
 
 .connect-wallet {
   padding: 1.1rem 0 0.5rem;
-  max-width: 27rem;
+  max-width: 25rem;
   width: 100%;
   font-size: 2rem !important;
   background-color: #00c8f7;
@@ -108,22 +112,12 @@ header .menu li:last-child a {
 /*======================
   Hamburger-menu style
 ========================*/
-.hamburger-menu {
+/* .hamburger-menu {
   cursor: pointer;
   display: none;
 }
-.desktop-connect {
-  display: flex;
-}
-.mobile-connect {
-  display: none;
-}
-.right-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
+
 .hamburger-menu span {
   background: #00498a;
   width: 3rem;
@@ -156,6 +150,22 @@ header .menu li:last-child a {
   -webkit-transform: translateY(-325%) rotate(-135deg);
   -ms-transform: translateY(-325%) rotate(-135deg);
   transform: translateY(-325%) rotate(-135deg);
+} */
+.hamburger {
+  max-width: 13%;
+  object-fit: contain;
+}
+.desktop-connect {
+  display: flex;
+}
+.mobile-connect {
+  display: none;
+}
+.right-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .switch {
   display: flex;

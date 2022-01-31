@@ -116,28 +116,28 @@ function Header() {
               <div className="social-div-footer mobile-menu">
                 <div className="icon-div">
                   <a target={"blank"} href="https://t.me/ArcaneTokenBNB">
-                    <img className="social-icon" src={icon1} alt="" />
+                    <i className="fab fa-telegram-plane"></i>
                   </a>
                   <a
                     target={"blank"}
                     href="https://twitter.com/arcanetokenbnb?s=21"
                   >
-                    <img className="social-icon" src={icon2} alt="" />
+                    <i className="fab fa-twitter"></i>
                   </a>
                   <a
                     target={"blank"}
                     href="https:instagram.com/arcanetokenbnb?utm_medium=copy_link"
                   >
-                    <img className="social-icon" src={icon3} alt="" />
+                    <i className="fab fa-instagram"></i>
                   </a>
                   <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
-                    <img className="social-icon" src={icon5} alt="" />
+                    <i className="fab fa-youtube"></i>
                   </a>
                   <a
                     target={"blank"}
                     href="https://youtube.com/channel/UCovNe7JAkU6OCucOf0SOQZw"
                   >
-                    <img className="social-icon" src={icon4} alt="" />
+                    <i className="fab fa-facebook-square"></i>
                   </a>
                 </div>
               </div>

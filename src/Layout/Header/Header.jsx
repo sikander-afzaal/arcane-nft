@@ -13,6 +13,8 @@ function Header() {
   const [darkMode, setDark] = useState(false);
   const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
+  const [darkHead, setDarkHead] = useState(false);
+  const [menuDark, setMenu] = useState("");
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 70) {
@@ -26,20 +28,50 @@ function Header() {
     };
   }, []);
   return (
-    <header className={`d-flex align-items-center ${show ? "scroll" : ""}`}>
+    <header
+      className={`d-flex align-items-center ${show ? "scroll" : ""}  ${
+        darkHead ? "header-color" : ""
+      }`}
+    >
       <div className="left-header">
         <div className="logo_area">
           <img src={logo} alt="img" />
         </div>
       </div>
       <div className="center-header">
-        <ul className={`menu ${active ? "current" : ""}`}>
+        <ul
+          className={`menu ${
+            active ? `current ${menuDark ? "dark" : ""}` : ""
+          }`}
+        >
           <li
             onClick={() => {
-              // document.querySelector("body").classList.toggle("dark");
-              // document.querySelector(".shape-wrapper").classList.toggle("bg");
-              // document.querySelector(".bg-triangle-2").classList.toggle("bg");
-              // document.querySelector(".bg-triangle").classList.toggle("bg");
+              setDarkHead((prev) => {
+                return !prev;
+              });
+              document.querySelector("body").classList.toggle("dark");
+              document.querySelectorAll(".small").forEach((elem) => {
+                elem.classList.toggle("font-color");
+              });
+              document.querySelectorAll(".big").forEach((elem) => {
+                elem.classList.toggle("font-color2");
+              });
+              document.querySelector(".shape-wrapper").classList.toggle("bg");
+              document.querySelector(".bg-triangle-2").classList.toggle("bg");
+              document.querySelector(".bg-triangle").classList.toggle("bg");
+              document
+                .querySelector(".right_top-collect p")
+                .classList.toggle("white");
+              document
+                .querySelector(".collect_right p")
+                .classList.toggle("white");
+              document
+                .querySelector(".open-box-slider")
+                .classList.toggle("dark");
+              document.querySelector(".qr").classList.toggle("bg");
+              document
+                .querySelector(".footer")
+                .classList.toggle("header-color");
               setDark((prev) => !prev);
             }}
             className={`switch ${darkMode ? "active" : ""}`}
@@ -116,7 +148,43 @@ function Header() {
               </div>
               <div
                 onClick={() => {
+                  setDarkHead((prev) => {
+                    return !prev;
+                  });
+
+                  document.querySelector("body").classList.toggle("dark");
+                  document.querySelector(".menu").classList.toggle("dark");
+
+                  document.querySelectorAll(".small").forEach((elem) => {
+                    elem.classList.toggle("font-color");
+                  });
+                  document.querySelectorAll(".big").forEach((elem) => {
+                    elem.classList.toggle("font-color2");
+                  });
+                  document
+                    .querySelector(".shape-wrapper")
+                    .classList.toggle("bg");
+                  document
+                    .querySelector(".bg-triangle-2")
+                    .classList.toggle("bg");
+                  document.querySelector(".bg-triangle").classList.toggle("bg");
+                  document
+                    .querySelector(".right_top-collect p")
+                    .classList.toggle("white");
+                  document
+                    .querySelector(".collect_right p")
+                    .classList.toggle("white");
+                  document
+                    .querySelector(".open-box-slider")
+                    .classList.toggle("dark");
+                  document.querySelector(".qr").classList.toggle("bg");
+                  document
+                    .querySelector(".footer")
+                    .classList.toggle("header-color");
                   setDark((prev) => !prev);
+                  setMenu((prev) => {
+                    return !prev;
+                  });
                 }}
                 className={`switch switch-mobile ${darkMode ? "active" : ""}`}
               >

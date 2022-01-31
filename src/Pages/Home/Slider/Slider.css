@@ -233,6 +233,41 @@
   padding: 5px 20px;
   cursor: pointer;
 }
+.eye-div {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-image: linear-gradient(to top, #13013b, rgba(19, 1, 58, 0.4));
+  width: 60%;
+  height: 83%;
+  display: grid;
+  border-radius: 50px;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease-in-out;
+}
+.slide-box:hover .eye-div {
+  pointer-events: initial !important;
+  opacity: 1;
+}
+.slide-box:hover .eye-div img {
+  pointer-events: initial !important;
+  opacity: 1;
+}
+
+.eye-div img {
+  max-width: 100%;
+  width: 30%;
+  object-fit: contain;
+  cursor: pointer;
+  pointer-events: none;
+}
+.open-eye {
+  pointer-events: initial !important;
+  opacity: 1;
+}
 @media screen and (max-width: 1643px) {
   .splide__arrow--prev {
     left: 1em !important;
@@ -251,12 +286,12 @@
   .close-box {
     top: 4%;
   }
-  .overlay {
-    top: -10%;
-    height: 120vh;
+  .overlay-2 {
+    top: -20%;
+    height: 140vh;
   }
   .left-slider-box img {
-    width: 100%;
+    width: 65%;
   }
   .right-slider-box,
   .left-slider-box {
@@ -283,6 +318,16 @@
     height: 4em !important;
     top: 90% !important;
   }
+  .overlay-2 {
+    top: -10%;
+    height: 160vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .overlay-2 {
+    top: -20%;
+    height: 160vh;
+  }
 }
 @media screen and (max-width: 500px) {
   .close-box {
@@ -293,5 +338,9 @@
   }
   .desc-bio {
     width: 90%;
+  }
+  .overlay-2 {
+    top: -20%;
+    height: 140vh;
   }
 }

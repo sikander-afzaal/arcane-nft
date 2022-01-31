@@ -8,7 +8,7 @@ function QR() {
         <img src={code} alt="" />
       </div>
       <div data-aos="fade-left" className="right-qr">
-        <h1>Join our official Telegram</h1>
+        <h1 className="qr-h1">Join our official Telegram</h1>
         <p>
           Join our Telegram group to get all news about the project, have some
           insights before anyone else, and have fun with the community

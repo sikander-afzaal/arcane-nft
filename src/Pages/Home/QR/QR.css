@@ -10,7 +10,7 @@
   max-width: 100%;
   object-fit: contain;
 }
-.right-qr h1 {
+.qr-h1 {
   color: #00498a;
   font-size: 6rem;
   text-transform: uppercase;

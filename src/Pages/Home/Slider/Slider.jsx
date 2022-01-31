@@ -2,21 +2,80 @@ import React, { useState } from "react";
 import "./Slider.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
-import img1 from "../../../Assets/s1.png";
-import img2 from "../../../Assets/s2.png";
-import img3 from "../../../Assets/s3.png";
-import img4 from "../../../Assets/s4.png";
+import silver1 from "../../../Assets/Slider/silver (1).png";
+import silver2 from "../../../Assets/Slider/silver (2).png";
+import silver3 from "../../../Assets/Slider/silver (3).png";
+import silver4 from "../../../Assets/Slider/silver (4).png";
+import silver5 from "../../../Assets/Slider/silver (5).png";
+import legend1 from "../../../Assets/Slider/legend (1).png";
+import legend2 from "../../../Assets/Slider/legend (2).png";
+import diamond from "../../../Assets/Slider/diamond (1).png";
+import diamond2 from "../../../Assets/Slider/diamond (2).png";
+import gold from "../../../Assets/Slider/gold (1).png";
+import gold2 from "../../../Assets/Slider/gold (2).png";
+import gold3 from "../../../Assets/Slider/gold (3).png";
+import epic from "../../../Assets/Slider/epic (1).png";
+import epic2 from "../../../Assets/Slider/epic (2).png";
 import star from "../../../Assets/star.svg";
 import eye from "../../../Assets/eye.svg";
 import letter from "../../../Assets/a.svg";
 import owner from "../../../Assets/Group 356.png";
 function Slider() {
+  const images = [
+    silver1,
+    silver2,
+    silver3,
+    silver4,
+    silver5,
+    gold,
+    gold2,
+    gold3,
+    diamond,
+    diamond2,
+    epic,
+    epic2,
+    legend1,
+    legend2,
+  ];
   const data = [
     {
-      num: 1,
-      img: img1,
+      num: 0,
+      img: silver1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
-              running her highschool bookclub on the side. She always pushes
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 1,
+      img: silver2,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 2,
+      img: silver3,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 3,
+      img: silver4,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
@@ -25,47 +84,148 @@ function Slider() {
     },
     {
       num: 4,
-      img: img4,
+      img: silver5,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
-              running her highschool bookclub on the side. She always pushes
+            running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "purple",
+      color: "green",
     },
     {
-      num: 2,
-      img: img2,
+      num: 5,
+      img: gold,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
-              running her highschool bookclub on the side. She always pushes
+            running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "yellow",
+      color: "green",
     },
     {
-      num: 3,
-      img: img3,
+      num: 6,
+      img: gold2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
-              running her highschool bookclub on the side. She always pushes
+            running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "blue",
+      color: "green",
+    },
+    {
+      num: 7,
+      img: gold3,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 8,
+      img: diamond,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 9,
+      img: diamond2,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 10,
+      img: epic,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 11,
+      img: epic2,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 12,
+      img: legend1,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
+    },
+    {
+      num: 13,
+      img: legend2,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "green",
     },
   ];
   const [open, setOpen] = useState(false);
+  const [view, showEye] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
   const [desc, setDesc] = useState("");
   const [color, setColor] = useState("");
   const [img, setImg] = useState("");
+  const [dark, setDark] = useState("");
   const clickHandler = (e) => {
+    if (document.querySelector("header").classList.contains("header-color")) {
+      setDark("dark");
+    } else {
+      setDark("");
+    }
     setOpen(true);
     const dataSet = e.target.dataset.num;
+    console.log(e.target);
     data.forEach((elem) => {
       if (elem.num == dataSet) {
+        console.log(elem.num);
+        console.log(dataSet);
         setDesc(elem.desc);
         setColor(elem.color);
         setImg(elem.img);
@@ -75,10 +235,30 @@ function Slider() {
   return (
     <div className="slider">
       <div className={`overlay-2 ${open ? "down" : ""}`}></div>
-      <div className={`open-box-slider ${open ? "down-box" : ""}`}>
+      <div className={`open-box-slider ${open ? `down-box ${dark}` : ""}`}>
         <i
           onClick={() => {
+            showEye((prev) => {
+              const copy = [
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+                false,
+              ];
+
+              return copy;
+            });
             setOpen(false);
+            console.log(view);
           }}
           className="fas fa-times close-box"
         ></i>
@@ -121,7 +301,6 @@ function Slider() {
         options={{
           interval: 2000,
           autoplay: true,
-          type: "loop",
           rewind: true,
           loop: true,
           perPage: 4,
@@ -144,117 +323,52 @@ function Slider() {
           },
         }}
       >
-        <SplideSlide>
-          <div className="slide-box green">
-            <div className="slide-box-top">
-              <img src={img1} alt="" />
-            </div>
-            <div className="slide-box-mid">
-              <h2>ARC</h2>
-              <img data-num={1} onClick={clickHandler} src={eye} alt="" />
-            </div>
-            <div className="slide-box-last">
-              <div className="star-div">
-                <img src={star} alt="" />
+        {images.map((img, key) => {
+          return (
+            <SplideSlide key={key}>
+              <div
+                onClick={() => {
+                  showEye((prev) => {
+                    const copy = [
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                    ];
+                    copy[key] = true;
+                    return copy;
+                  });
+                }}
+                className="slide-box"
+              >
+                <div
+                  style={{ pointerEvents: "none" }}
+                  className="slide-box-top"
+                >
+                  <img style={{ pointerEvents: "none" }} src={img} alt="" />
+                </div>
+                <div className={`eye-div ${view[key] ? "open-eye" : ""}`}>
+                  <img
+                    className={`${view[key] ? "open-eye" : ""}`}
+                    data-num={key}
+                    onClick={clickHandler}
+                    src={eye}
+                    alt=""
+                  />
+                </div>
               </div>
-              <p className="rarity">Gold Arcane</p>
-            </div>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="slide-box yellow">
-            <div className="slide-box-top">
-              <img src={img2} alt="" />
-            </div>
-            <div className="slide-box-mid">
-              <h2>ARC</h2>
-              <img data-num={2} onClick={clickHandler} src={eye} alt="" />
-            </div>
-            <div className="slide-box-last">
-              <div className="star-div">
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-              </div>
-              <p className="rarity">Gold Arcane</p>
-            </div>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="slide-box blue">
-            <div className="slide-box-top">
-              <img src={img3} alt="" />
-            </div>
-            <div className="slide-box-mid">
-              <h2>ARC</h2>
-              <img data-num={3} onClick={clickHandler} src={eye} alt="" />
-            </div>
-            <div className="slide-box-last">
-              <div className="star-div">
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-              </div>
-              <p className="rarity">Gold Arcane</p>
-            </div>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="slide-box purple">
-            <div className="slide-box-top">
-              <img src={img4} alt="" />
-            </div>
-            <div className="slide-box-mid">
-              <h2>ARC</h2>
-              <img data-num={4} onClick={clickHandler} src={eye} alt="" />
-            </div>
-            <div className="slide-box-last">
-              <div className="star-div">
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-              </div>
-              <p className="rarity">Gold Arcane</p>
-            </div>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="slide-box green">
-            <div className="slide-box-top">
-              <img src={img1} alt="" />
-            </div>
-            <div className="slide-box-mid">
-              <h2>ARC</h2>
-              <img data-num={1} onClick={clickHandler} src={eye} alt="" />
-            </div>
-            <div className="slide-box-last">
-              <div className="star-div">
-                <img src={star} alt="" />
-              </div>
-              <p className="rarity">Gold Arcane</p>
-            </div>
-          </div>
-        </SplideSlide>
-        <SplideSlide>
-          <div className="slide-box purple">
-            <div className="slide-box-top">
-              <img src={img4} alt="" />
-            </div>
-            <div className="slide-box-mid">
-              <h2>ARC</h2>
-              <img data-num={4} onClick={clickHandler} src={eye} alt="" />
-            </div>
-            <div className="slide-box-last">
-              <div className="star-div">
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-                <img src={star} alt="" />
-              </div>
-              <p className="rarity">Gold Arcane</p>
-            </div>
-          </div>
-        </SplideSlide>
+            </SplideSlide>
+          );
+        })}
       </Splide>
       <button data-aos="fade-up">
         <img src={letter} alt="" /> COMING SOON

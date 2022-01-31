@@ -180,8 +180,47 @@ header * {
   overflow-x: visible;
 }
 .dark {
-  background-color: #262626;
+  background-color: #313131 !important;
+}
+.dark .right-slider-box .bio-div .desc-bio,
+.dark .close-box {
+  color: white !important;
 }
 .bg {
   background-image: none !important;
+  mix-blend-mode: normal !important;
+  background-color: transparent !important;
+}
+.dark h2 {
+  color: #13c6f7 !important;
+}
+.dark h1 {
+  color: #13c6f7;
+}
+.font-color {
+  color: #13c6f7 !important;
+}
+.font-color2 {
+  color: rgba(226, 218, 254, 0.1) !important;
+}
+.header-color {
+  background-color: #262626 !important;
+}
+.header-color .center-header .menu li a {
+  color: white;
+}
+.header-color .footer-left .social-div-footer p {
+  color: white;
+}
+.header-color .footer-right p {
+  color: white;
+}
+.bg .right-qr p {
+  color: white;
+}
+.white {
+  color: white !important;
+}
+.dark .cross i {
+  color: white;
 }

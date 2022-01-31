@@ -405,6 +405,13 @@ header .menu li:last-child a {
   .left-header {
     width: 17%;
   }
+  .right-head {
+    justify-content: flex-end;
+  }
+  header {
+    justify-content: space-between;
+    padding: 0rem 3rem;
+  }
 }
 @media screen and (max-width: 647px) {
   .left-header {

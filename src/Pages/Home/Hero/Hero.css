@@ -7,14 +7,15 @@
   align-items: center;
   margin: 0 auto;
   margin-top: 4rem;
-  width: 80%;
+  width: 100%;
 }
 .hero img {
   max-width: 100%;
+  width: 85%;
   object-fit: contain;
 }
 .splide__pagination {
-  bottom: 17% !important;
+  bottom: 4% !important;
   left: 80% !important;
 }
 .splide__pagination__page.is-active {

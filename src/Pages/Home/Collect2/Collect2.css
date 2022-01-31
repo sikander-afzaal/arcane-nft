@@ -21,6 +21,11 @@
   z-index: 4;
   transition: all 0.3s ease-in-out;
   -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  /*IE10*/
+  -ms-user-select: none;
+  user-select: none;
 }
 .collect-box:hover {
   transform: scale(1.2);

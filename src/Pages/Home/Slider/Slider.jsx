@@ -371,7 +371,8 @@ function Slider() {
         })}
       </Splide>
       <button data-aos="fade-up">
-        <img src={letter} alt="" /> COMING SOON
+        <img src={letter} alt="" />
+        Buy MysteryBox
       </button>
     </div>
   );

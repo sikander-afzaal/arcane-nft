@@ -34,9 +34,6 @@ function Status() {
       </div>
       <div data-aos="fade-right" className="btn-div-status">
         <button>
-          <img src={letter} alt="" /> Claim Airdrop
-        </button>
-        <button>
           <img src={letter} alt="" /> Buy Mysterybox
         </button>
       </div>

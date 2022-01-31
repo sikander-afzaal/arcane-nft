@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Video.css";
-import vidImg from "../../../Assets/play-bg.png";
+import vidImg from "../../../Assets/Thumbnail.png";
 import play from "../../../Assets/play.png";
 function Video() {
   const [open, setOpen] = useState(false);

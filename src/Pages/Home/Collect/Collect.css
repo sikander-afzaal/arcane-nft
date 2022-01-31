@@ -42,6 +42,12 @@
   font-size: 5.5rem;
   color: #00498a;
 }
+.collect_right .find-top .big {
+  font-size: 5rem;
+}
+.collect_right .find-top .small {
+  font-size: 4rem;
+}
 .collect_right p {
   font-size: 2.2rem;
   color: #00498a;

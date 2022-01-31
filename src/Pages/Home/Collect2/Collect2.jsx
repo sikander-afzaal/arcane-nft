@@ -130,7 +130,10 @@ function Collect2() {
       </div>
       <div className="collect2_right">
         <div data-aos="fade-left" className="right_top-collect">
-          <h2>ARCANE STATION</h2>
+          <div data-aos="fade-down" className="find-top">
+            <h1 className="big">ARCANE STATION</h1>
+            <h1 className="small">ARCANE STATION</h1>
+          </div>
           <p>
             Arcane station will feture both live projects, and future projects.
             To have an idea of what Arcane team is working on.

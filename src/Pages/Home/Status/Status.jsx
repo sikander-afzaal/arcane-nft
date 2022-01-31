@@ -7,7 +7,10 @@ import letter from "../../../Assets/a.svg";
 function Status() {
   return (
     <div data-aos="fade-down" className="status">
-      <h1 className="status-h1">ARCANE STATUS</h1>
+      <div data-aos="fade-down" className="find-top">
+        <h1 className="big">ARCANE STATUS</h1>
+        <h1 className="small">ARCANE STATUS</h1>
+      </div>
       <div
         data-aos="fade-right"
         data-aos-delay="1000"

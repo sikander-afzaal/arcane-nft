@@ -103,6 +103,7 @@ header .menu li:last-child a {
   width: 100%;
   border-radius: 0;
   margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 /*======================
   Hamburger-menu style

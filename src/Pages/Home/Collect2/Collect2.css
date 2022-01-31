@@ -141,12 +141,18 @@
 .right_top-collect {
   margin-top: -6rem;
 }
-.collect2_right .right_top-collect h2 {
+.collect2_right .right_top-collect .find-top {
   font-weight: 500;
   text-transform: uppercase;
   width: 45%;
   font-size: 5.5rem;
   color: #00498a;
+}
+.collect2_right .right_top-collect .find-top .big {
+  font-size: 5rem;
+}
+.collect2_right .right_top-collect .find-top .small {
+  font-size: 4rem;
 }
 .collect2_right .right_top-collect p {
   font-size: 2.2rem;
@@ -209,6 +215,25 @@
   opacity: 1;
   transform: translateY(0px);
 }
+@media screen and (max-width: 1763px) {
+  .collect2_right .right_top-collect .find-top {
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 50%;
+    font-size: 5.5rem;
+    color: #00498a;
+  }
+}
+@media screen and (max-width: 1590px) {
+  .collect2_right .right_top-collect .find-top {
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 65%;
+    font-size: 5.5rem;
+    color: #00498a;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .collect2_right .right_top-collect h2 {
     font-size: 4.5rem;
@@ -225,6 +250,13 @@
   .collect-box p {
     font-size: 1.6rem;
   }
+  .collect2_right .right_top-collect .find-top {
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 75%;
+    font-size: 5.5rem;
+    color: #00498a;
+  }
 }
 @media screen and (max-width: 1100px) {
   .collect2 {
@@ -234,6 +266,13 @@
   }
   .right-box {
     display: none;
+  }
+  .collect2_right .right_top-collect .find-top {
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 5.5rem;
+    color: #00498a;
   }
   .mobile-box {
     order: 3;

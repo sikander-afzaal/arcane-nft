@@ -22,9 +22,9 @@ import letter from "../../../Assets/a.svg";
 import owner from "../../../Assets/Group 356.png";
 function Slider() {
   const images = [
-    silver1,
-    silver2,
     silver3,
+    silver2,
+    silver1,
     silver4,
     silver5,
     gold,
@@ -40,7 +40,7 @@ function Slider() {
   const data = [
     {
       num: 0,
-      img: silver1,
+      img: silver3,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
@@ -62,7 +62,7 @@ function Slider() {
     },
     {
       num: 2,
-      img: silver3,
+      img: silver1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She

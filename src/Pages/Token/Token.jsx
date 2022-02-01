@@ -3,6 +3,7 @@ import "./Token.css";
 import Token_hero from "./Token_hero/Token_hero.jsx";
 import Audit from "./Audit/Audit.jsx";
 import Tokenomics from "./Tokenomics/Tokenomics.jsx";
+import QR from "../Home/QR/QR.jsx";
 //assets
 
 function Token() {
@@ -11,6 +12,7 @@ function Token() {
       <Token_hero />
       <Audit />
       <Tokenomics />
+      <QR />
     </div>
   );
 }

@@ -11,6 +11,10 @@ import bg2 from "../../../Assets/Token/Elements-54.png";
 import bg3 from "../../../Assets/Token/Elements-55.png";
 import letter from "../../../Assets/a.svg";
 function Token_hero() {
+  function copyToClipboard(e) {
+    const copiedText = document.querySelector(".address").innerText;
+    navigator.clipboard.writeText(copiedText);
+  }
   return (
     <div className="token_hero">
       <div className="token_hero-left">
@@ -65,7 +69,7 @@ function Token_hero() {
             <img src={letter} alt="" /> COMING SOON
           </button>
           <div className="address-div">
-            <div className="abosulte-copy">
+            <div onClick={copyToClipboard} className="abosulte-copy">
               <i className="far fa-copy"></i>
               Copy To Clipboard
             </div>

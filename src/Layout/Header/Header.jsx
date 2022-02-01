@@ -14,6 +14,30 @@ function Header() {
   const [show, setShow] = useState(false);
   const [darkHead, setDarkHead] = useState(false);
   const [menuDark, setMenu] = useState("");
+  const darker = (e) => {
+    setDarkHead((prev) => {
+      return !prev;
+    });
+    document.querySelector("body").classList.toggle("dark");
+    document.querySelectorAll(".small").forEach((elem) => {
+      elem.classList.toggle("font-color");
+    });
+    document.querySelectorAll(".big").forEach((elem) => {
+      elem.classList.toggle("font-color2");
+    });
+    document.querySelector(".shape-wrapper").classList.toggle("bg");
+    document.querySelector(".bg-triangle-2").classList.toggle("bg");
+    document.querySelector(".bg-triangle").classList.toggle("bg");
+    document.querySelectorAll(".right-desc p").forEach((item) => {
+      item.classList.toggle("white");
+    });
+    document.querySelector(".right_top-collect p").classList.toggle("white");
+    document.querySelector(".collect_right p").classList.toggle("white");
+    document.querySelector(".open-box-slider").classList.toggle("dark");
+    document.querySelector(".qr").classList.toggle("bg");
+    document.querySelector(".footer").classList.toggle("header-color");
+    setDark((prev) => !prev);
+  };
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 70) {
@@ -43,41 +67,7 @@ function Header() {
             active ? `current ${menuDark ? "dark" : ""}` : ""
           }`}
         >
-          <li
-            onClick={() => {
-              setDarkHead((prev) => {
-                return !prev;
-              });
-              document.querySelector("body").classList.toggle("dark");
-              document.querySelectorAll(".small").forEach((elem) => {
-                elem.classList.toggle("font-color");
-              });
-              document.querySelectorAll(".big").forEach((elem) => {
-                elem.classList.toggle("font-color2");
-              });
-              document.querySelector(".shape-wrapper").classList.toggle("bg");
-              document.querySelector(".bg-triangle-2").classList.toggle("bg");
-              document.querySelector(".bg-triangle").classList.toggle("bg");
-              document.querySelectorAll(".right-desc p").forEach((item) => {
-                item.classList.toggle("white");
-              });
-              document
-                .querySelector(".right_top-collect p")
-                .classList.toggle("white");
-              document
-                .querySelector(".collect_right p")
-                .classList.toggle("white");
-              document
-                .querySelector(".open-box-slider")
-                .classList.toggle("dark");
-              document.querySelector(".qr").classList.toggle("bg");
-              document
-                .querySelector(".footer")
-                .classList.toggle("header-color");
-              setDark((prev) => !prev);
-            }}
-            className={`switch ${darkMode ? "active" : ""}`}
-          >
+          <li onClick={darker} className={`switch ${darkMode ? "active" : ""}`}>
             <img src={light} alt="" />
             <img src={dark} alt="" />
           </li>
@@ -94,22 +84,52 @@ function Header() {
             <i className="far fa-times"></i>
           </li>
 
-          <li className="bottom-border">
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
             <Link to="/">HOME</Link>
           </li>
-          <li className="bottom-border">
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
             <a href="#">PROFILE</a>
           </li>
-          <li className="bottom-border">
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
             <Link to="/Token">THE TOKEN</Link>
           </li>
-          <li className="bottom-border">
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
             <a href="#">MYSTERY BOX</a>
           </li>
-          <li className="bottom-border">
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
             <a href="#">MARKET PLACE</a>
           </li>
-          <li className="bottom-border">
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
             <a href="#">HELP</a>
           </li>
 
@@ -153,48 +173,7 @@ function Header() {
                 <a href="#">1$ = 0.012829 Arcane </a>
               </div>
               <div
-                onClick={() => {
-                  setDarkHead((prev) => {
-                    return !prev;
-                  });
-
-                  document.querySelector("body").classList.toggle("dark");
-                  document.querySelector(".menu").classList.toggle("dark");
-
-                  document.querySelectorAll(".small").forEach((elem) => {
-                    elem.classList.toggle("font-color");
-                  });
-                  document.querySelectorAll(".big").forEach((elem) => {
-                    elem.classList.toggle("font-color2");
-                  });
-                  document.querySelectorAll(".right-desc p").forEach((item) => {
-                    item.classList.toggle("white");
-                  });
-                  document
-                    .querySelector(".shape-wrapper")
-                    .classList.toggle("bg");
-                  document
-                    .querySelector(".bg-triangle-2")
-                    .classList.toggle("bg");
-                  document.querySelector(".bg-triangle").classList.toggle("bg");
-                  document
-                    .querySelector(".right_top-collect p")
-                    .classList.toggle("white");
-                  document
-                    .querySelector(".collect_right p")
-                    .classList.toggle("white");
-                  document
-                    .querySelector(".open-box-slider")
-                    .classList.toggle("dark");
-                  document.querySelector(".qr").classList.toggle("bg");
-                  document
-                    .querySelector(".footer")
-                    .classList.toggle("header-color");
-                  setDark((prev) => !prev);
-                  setMenu((prev) => {
-                    return !prev;
-                  });
-                }}
+                onClick={darker}
                 className={`switch switch-mobile ${darkMode ? "active" : ""}`}
               >
                 <img src={light} alt="" />

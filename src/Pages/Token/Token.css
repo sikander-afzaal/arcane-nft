@@ -1,0 +1,8 @@
+.token .bg-triangle,
+.token .bg-triangle-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}

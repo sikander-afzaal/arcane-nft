@@ -194,6 +194,9 @@ header * {
 .dark h2 {
   color: #13c6f7 !important;
 }
+.dark p {
+  color: white;
+}
 .dark h1 {
   color: #13c6f7;
 }

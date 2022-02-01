@@ -51,8 +51,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: #00498a;
-  font-size: 4rem;
+  font-size: 5.5rem;
   font-weight: bold;
+  width: max-content;
 }
 .buy-arcane-div {
   display: flex;
@@ -175,9 +176,9 @@
     color: #8d8d8d;
     font-size: 1.4rem;
   }
-  .bg-box p {
+  /* .bg-box p {
     font-size: 3.4rem;
-  }
+  } */
   .token_hero {
     width: 100%;
     padding: 0rem 4rem;

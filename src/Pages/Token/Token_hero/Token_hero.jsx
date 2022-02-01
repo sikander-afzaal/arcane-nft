@@ -40,7 +40,7 @@ function Token_hero() {
           </div>
           <div className="bg-box">
             <img src={bg3} alt="" />
-            <p>25K +</p>
+            <p>25K+</p>
           </div>
         </div>
         <div className="mobile-token bg-mobile-box">
@@ -56,17 +56,17 @@ function Token_hero() {
           </div>
           <div className="row-1-bg">
             <div className="bg-box-mobile">
-              <h1>25K +</h1>
+              <h1>25K+</h1>
               <p>Telegram Members</p>
             </div>
             <button className="letter">
-              <img src={letter} alt="" /> COMING SOON
+              <img src={letter} alt="" /> BUY NOW
             </button>
           </div>
         </div>
         <div className="buy-arcane-div">
           <button className="desktop-token">
-            <img src={letter} alt="" /> COMING SOON
+            <img src={letter} alt="" /> BUY NOW
           </button>
           <div className="address-div">
             <div onClick={copyToClipboard} className="abosulte-copy">
@@ -75,7 +75,7 @@ function Token_hero() {
             </div>
             <p>Contract Address</p>
             <p className="address">
-              0x79eBC9A2ce02277A4b5b3A768b1C0A4ed75Bd936
+              0x477565b356b3973d16e8cd837c6970613f13e24a
             </p>
           </div>
         </div>

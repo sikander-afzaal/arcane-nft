@@ -1,0 +1,93 @@
+.audit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.audit-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.audit-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.audit-card img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.audit-card p {
+  font-size: 3rem;
+  color: #8d8d8d;
+}
+.audit-card i {
+  font-size: 2.4rem;
+  color: white;
+  background-color: #02c8f7;
+  padding: 5px 35px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.audit-bottom {
+  margin-top: 6rem;
+}
+.audit-bottom img {
+  max-width: 100%;
+  object-fit: contain;
+}
+@media screen and (max-width: 1164px) {
+  .audit {
+    width: 100%;
+    padding: 0rem 4rem;
+  }
+}
+@media screen and (max-width: 964px) {
+  .audit .find-top .big {
+    font-size: 6rem;
+  }
+  .audit .find-top .small {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .audit {
+    margin-top: 1.5rem;
+  }
+  .audit-top {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 634px) {
+  .audit .find-top .big {
+    font-size: 5rem;
+  }
+  .audit .find-top .small {
+    font-size: 4rem;
+  }
+  .audit-bottom {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 544px) {
+  .audit .find-top .big {
+    font-size: 4rem;
+  }
+  .audit .find-top .small {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 444px) {
+  .audit {
+    padding: 0rem 0.5rem;
+  }
+}

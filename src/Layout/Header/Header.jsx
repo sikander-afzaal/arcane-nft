@@ -7,6 +7,7 @@ import hamburger from "../../Assets/social/Elements-129.png";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 function Header() {
   const [darkMode, setDark] = useState(false);
   const [active, setActive] = useState(false);
@@ -94,13 +95,13 @@ function Header() {
           </li>
 
           <li className="bottom-border">
-            <a href="#">HOME</a>
+            <Link to="/">HOME</Link>
           </li>
           <li className="bottom-border">
             <a href="#">PROFILE</a>
           </li>
           <li className="bottom-border">
-            <a href="#">THE TOKEN</a>
+            <Link to="/Token">THE TOKEN</Link>
           </li>
           <li className="bottom-border">
             <a href="#">MYSTERY BOX</a>

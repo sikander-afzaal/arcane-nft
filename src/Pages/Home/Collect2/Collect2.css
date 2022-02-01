@@ -196,7 +196,9 @@
   font-size: 2rem;
   color: #00498a;
 }
-.right-box button {
+.right-box button,
+.buy-arcane-div button,
+.letter {
   display: flex;
   justify-content: center;
   align-items: center;

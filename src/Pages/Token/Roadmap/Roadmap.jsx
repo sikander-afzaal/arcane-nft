@@ -3,7 +3,7 @@ import "./Roadmap.css";
 function Roadmap({ dark }) {
   // <i className="far fa-check-circle"></i>;
   return (
-    <div data-aos="fade-top" data-aos-delay="200" className="roadmap">
+    <div data-aos="fade-top" data-aos-delay="800" className="roadmap">
       <div className={`find-top ${dark ? "top-dark" : ""}`}>
         <h1 className="big">ROADMAP</h1>
         <h1 className="small">ROADMAP</h1>

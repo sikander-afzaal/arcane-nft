@@ -180,7 +180,15 @@
     width: 100%;
   }
   .bg-box img {
+    max-width: 255px;
+  }
+}
+@media screen and (max-width: 1378px) {
+  .bg-box img {
     max-width: 190px;
+  }
+  .bg-box:nth-of-type(2) img {
+    max-width: 110px;
   }
 }
 @media screen and (max-width: 1349px) {
@@ -192,13 +200,16 @@
     font-size: 3.4rem;
   } */
   .token_hero {
-    width: 100%;
+    max-width: 100%;
     padding: 0rem 4rem;
   }
 }
 @media screen and (max-width: 1168px) {
   .token_hero {
     flex-direction: column;
+  }
+  .bg-box:nth-of-type(2) img {
+    max-width: 110px;
   }
 }
 @media screen and (max-width: 770px) {

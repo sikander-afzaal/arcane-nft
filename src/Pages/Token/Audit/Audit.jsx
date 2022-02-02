@@ -3,30 +3,41 @@ import "./Audit.css";
 import card from "../../../Assets/Token/Elements-18.png";
 import card2 from "../../../Assets/Token/Elements-19.png";
 import shape from "../../../Assets/Token/Elements-70.png";
+import pdf from "../../../Assets/Token/buy.pdf";
 function Audit({ dark }) {
   return (
     <div className="audit">
-      <div className={`find-top ${dark ? "top-dark" : ""}`}>
+      <div
+        data-aos="fade-bottom"
+        className={`find-top ${dark ? "top-dark" : ""}`}
+      >
         <h1 className="big">Whitepaper & Audit</h1>
         <h1 className="small">Whitepaper & Audit</h1>
       </div>
       <div className="audit-top">
-        <div className="audit-card">
+        <div data-aos-delay="400" data-aos="fade-right" className="audit-card">
           <img src={card} alt="" />
           <p className={`${dark ? "dark-p" : ""}`}>AUDIT</p>
-          <i className="fas fa-download"></i>
+          <a download="How To Buy" href={pdf} className="download">
+            <i className="fas fa-download"></i>
+          </a>
         </div>
-        <div className="audit-card">
+        <div data-aos-delay="400" data-aos="fade-left" className="audit-card">
           <img src={card2} alt="" />
           <p className={`${dark ? "dark-p" : ""}`}>WHITEPAPER</p>
-          <i className="fas fa-download"></i>
+          <a download="How To Buy" href={pdf} className="download">
+            <i className="fas fa-download"></i>
+          </a>
         </div>
       </div>
-      <div className={`supply-h1 find-top ${dark ? "top-dark" : ""}`}>
+      <div
+        data-aos="fade-bottom"
+        className={`supply-h1 find-top ${dark ? "top-dark" : ""}`}
+      >
         <h1 className="big">SUPPLY</h1>
         <h1 className="small">SUPPLY</h1>
       </div>
-      <div className="audit-bottom">
+      <div data-aos-delay="400" data-aos="fade-top" className="audit-bottom">
         <img src={shape} alt="" />
       </div>
     </div>

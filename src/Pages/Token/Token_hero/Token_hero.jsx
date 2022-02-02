@@ -20,12 +20,14 @@ function Token_hero({ dark }) {
   }
   return (
     <div className="token_hero">
-      <div className="token_hero-left">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="100"
+        className="token_hero-left"
+      >
         <div className={`find-top ${dark ? "top-dark" : ""}`}>
           <h1 className="big">THIS IS ARCANE</h1>
-          <h1 className="small">
-            This Is <br /> Arcane
-          </h1>
+          <h1 className="small">This Is Arcane</h1>
         </div>
 
         <p className={`${dark ? "dark-p" : ""}`}>
@@ -109,7 +111,11 @@ function Token_hero({ dark }) {
           </div>
         </div>
       </div>
-      <div className="token_hero-right">
+      <div
+        data-aos="fade-left"
+        data-aos-delay="100"
+        className="token_hero-right"
+      >
         <img src={person} alt="" />
       </div>
     </div>

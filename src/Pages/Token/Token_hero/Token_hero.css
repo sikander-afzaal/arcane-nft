@@ -19,18 +19,6 @@
   font-size: 6rem;
   font-weight: 500;
 } */
-.token_hero-left .find-top {
-  height: auto;
-  min-height: 170px;
-}
-.token_hero-left .find-top .small {
-  font-size: 6rem;
-  left: 25%;
-  height: auto;
-}
-.token_hero-left .find-top .big {
-  font-size: 7rem;
-}
 .token_hero-left > p {
   color: #8d8d8d;
   font-size: 1.7rem;
@@ -261,7 +249,7 @@
   }
 }
 @media screen and (max-width: 545px) {
-  .token_hero-left .find-top {
+  /* .token_hero-left .find-top {
     min-height: 140px;
   }
   .token_hero-left .find-top .small {
@@ -271,7 +259,7 @@
   }
   .token_hero-left .find-top .big {
     font-size: 5rem;
-  }
+  } */
 }
 @media screen and (max-width: 500px) {
   .bg-box-mobile h1 {
@@ -288,7 +276,7 @@
   }
 }
 @media screen and (max-width: 444px) {
-  .token_hero-left .find-top .small {
+  /* .token_hero-left .find-top .small {
     font-size: 3.5rem;
   }
   .token_hero-left .find-top .big {
@@ -296,5 +284,5 @@
   }
   .token_hero-left .find-top {
     min-height: 110px;
-  }
+  } */
 }

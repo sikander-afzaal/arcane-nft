@@ -3,10 +3,10 @@ import "./Buy.css";
 import card from "../../../Assets/Token/Elements-20.png";
 import bag from "../../../Assets/Token/Elements-56.png";
 import girl from "../../../Assets/Token/Elements-57.png";
-function Buy() {
+function Buy({ dark }) {
   return (
     <div className="buy">
-      <div className="find-top">
+      <div className={`find-top ${dark ? "top-dark" : ""}`}>
         <h1 className="big">HOW TO BUY</h1>
         <h1 className="small">HOW TO BUY</h1>
       </div>

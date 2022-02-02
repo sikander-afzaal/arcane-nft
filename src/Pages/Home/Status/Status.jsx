@@ -4,10 +4,13 @@ import icon1 from "../../../Assets/Group 356.png";
 import icon2 from "../../../Assets/Group 357.png";
 import icon3 from "../../../Assets/Group 358.png";
 import letter from "../../../Assets/a.svg";
-function Status() {
+function Status({ dark }) {
   return (
     <div data-aos="fade-down" className="status">
-      <div data-aos="fade-down" className="find-top">
+      <div
+        data-aos="fade-down"
+        className={`find-top ${dark ? "top-dark" : ""}`}
+      >
         <h1 className="big">ARCANE STATUS</h1>
         <h1 className="small">ARCANE STATUS</h1>
       </div>

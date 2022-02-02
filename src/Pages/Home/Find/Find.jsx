@@ -7,10 +7,13 @@ import comp4 from "../../../Assets/Elements-86.png";
 import comp5 from "../../../Assets/Elements-87.png";
 import comp6 from "../../../Assets/Elements-88.png";
 import comp7 from "../../../Assets/Elements-89.png";
-function Find() {
+function Find({ dark }) {
   return (
     <div className="find">
-      <div data-aos="fade-down" className="find-top">
+      <div
+        data-aos="fade-down"
+        className={`find-top ${dark ? "top-dark" : ""}`}
+      >
         <h1 className="big">FIND ARCANE ON</h1>
         <h1 className="small">FIND ARCANE ON</h1>
       </div>

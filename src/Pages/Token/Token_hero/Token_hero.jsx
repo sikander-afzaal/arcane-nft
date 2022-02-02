@@ -9,8 +9,11 @@ import person from "../../../Assets/Token/Elements-25.png";
 import bg1 from "../../../Assets/Token/Elements-53.png";
 import bg2 from "../../../Assets/Token/Elements-54.png";
 import bg3 from "../../../Assets/Token/Elements-55.png";
+import bg1Dark from "../../../Assets/Token/Elements-49.png";
+import bg2Dark from "../../../Assets/Token/Elements-50.png";
+import bg3Dark from "../../../Assets/Token/Elements-52.png";
 import letter from "../../../Assets/a.svg";
-function Token_hero() {
+function Token_hero({ dark }) {
   function copyToClipboard(e) {
     const copiedText = document.querySelector(".address").innerText;
     navigator.clipboard.writeText(copiedText);
@@ -18,46 +21,46 @@ function Token_hero() {
   return (
     <div className="token_hero">
       <div className="token_hero-left">
-        <div className="find-top">
-          <h1 className="big">THIS IS TOKEN</h1>
+        <div className={`find-top ${dark ? "top-dark" : ""}`}>
+          <h1 className="big">THIS IS ARCANE</h1>
           <h1 className="small">
             This Is <br /> Arcane
           </h1>
         </div>
 
-        <p>
+        <p className={`${dark ? "dark-p" : ""}`}>
           Arcane is an NFT focused, community driven crypto currency, with real
           world use.
         </p>
         <div className="left-bg-div desktop-token">
           <div className="bg-box">
-            <img src={bg1} alt="" />
-            <p>9852</p>
+            <img src={dark ? bg1Dark : bg1} alt="" />
+            <p className={`${dark ? "dark-p" : ""}`}>9852</p>
           </div>
           <div className="bg-box">
-            <img src={bg2} alt="" />
-            <p>10%</p>
+            <img src={dark ? bg2Dark : bg2} alt="" />
+            <p className={`${dark ? "dark-p" : ""}`}>10%</p>
           </div>
           <div className="bg-box">
-            <img src={bg3} alt="" />
-            <p>25K+</p>
+            <img src={dark ? bg3Dark : bg3} alt="" />
+            <p className={`${dark ? "dark-p" : ""}`}>25K+</p>
           </div>
         </div>
         <div className="mobile-token bg-mobile-box">
           <div className="row-1-bg">
             <div className="bg-box-mobile">
-              <h1>9852</h1>
-              <p>Arcane Holders</p>
+              <h1 className={`${dark ? "dark-p" : ""}`}>9852</h1>
+              <p className={`${dark ? "dark-p" : ""}`}>Arcane Holders</p>
             </div>
             <div className="bg-box-mobile">
-              <h1>10%</h1>
-              <p>Total Token Burn</p>
+              <h1 className={`${dark ? "dark-p" : ""}`}>10%</h1>
+              <p className={`${dark ? "dark-p" : ""}`}>Total Token Burn</p>
             </div>
           </div>
           <div className="row-1-bg">
             <div className="bg-box-mobile">
-              <h1>25K+</h1>
-              <p>Telegram Members</p>
+              <h1 className={`${dark ? "dark-p" : ""}`}>25K+</h1>
+              <p className={`${dark ? "dark-p" : ""}`}>Telegram Members</p>
             </div>
             <button className="letter">
               <img src={letter} alt="" /> BUY NOW
@@ -80,7 +83,7 @@ function Token_hero() {
           </div>
         </div>
         <div className="token-hero-social">
-          <p>Our Communities</p>
+          <p className={`${dark ? "dark-p" : ""}`}>Our Communities</p>
           <div className="icon-div">
             <a target={"blank"} href="https://t.me/ArcaneTokenBNB">
               <img className="social-icon" src={telegram} alt="" />

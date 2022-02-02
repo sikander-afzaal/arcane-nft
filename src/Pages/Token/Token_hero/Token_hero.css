@@ -4,6 +4,7 @@
   align-items: center;
   width: 80%;
   height: auto;
+  overflow: visible;
   margin-top: 2rem;
 }
 .token_hero-left {
@@ -54,6 +55,10 @@
   font-size: 5.5rem;
   font-weight: bold;
   width: max-content;
+}
+.bg-box img {
+  max-width: 100%;
+  object-fit: contain;
 }
 .buy-arcane-div {
   display: flex;
@@ -146,10 +151,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: visible;
 }
 .token_hero-right img {
   max-width: 100%;
   object-fit: contain;
+}
+.token_hero-right::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../../Assets/Token/Elements-59.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  left: 21%;
+  top: 27%;
+  z-index: -1;
 }
 .desktop-token {
   display: block;
@@ -266,5 +285,16 @@
   }
   .bg-mobile-box {
     width: 100%;
+  }
+}
+@media screen and (max-width: 444px) {
+  .token_hero-left .find-top .small {
+    font-size: 3.5rem;
+  }
+  .token_hero-left .find-top .big {
+    font-size: 4rem;
+  }
+  .token_hero-left .find-top {
+    min-height: 110px;
   }
 }

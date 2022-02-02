@@ -9,22 +9,22 @@ import Find from "./Find/Find.jsx";
 import Slider from "./Slider/Slider.jsx";
 import Status from "./Status/Status.jsx";
 import Season from "./Seasons/Season.jsx";
-function Home() {
+function Home({ dark }) {
   return (
     <div className="home">
-      <Hero />
+      <Hero dark={dark} />
       <Video />
-      <div className="shape-wrapper">
-        <Collect />
-        <Collect2 />
-        <div className="bg-triangle-2">
-          <Season />
-          <Slider />
-          <Status />
+      <div className={`${dark ? "bg" : ""} shape-wrapper`}>
+        <Collect dark={dark} />
+        <Collect2 dark={dark} />
+        <div className={`${dark ? "bg" : ""} bg-triangle-2`}>
+          <Season dark={dark} />
+          <Slider darkMode={dark} />
+          <Status dark={dark} />
         </div>
-        <div className="bg-triangle">
-          <Find />
-          <QR />
+        <div className={`${dark ? "bg" : ""} bg-triangle`}>
+          <Find dark={dark} />
+          <QR dark={dark} />
         </div>
       </div>
     </div>

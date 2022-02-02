@@ -20,7 +20,7 @@ import star from "../../../Assets/star.svg";
 import eye from "../../../Assets/eye.svg";
 import letter from "../../../Assets/a.svg";
 import owner from "../../../Assets/Group 356.png";
-function Slider() {
+function Slider({ darkMode }) {
   const images = [
     silver3,
     silver2,
@@ -214,7 +214,7 @@ function Slider() {
   const [img, setImg] = useState("");
   const [dark, setDark] = useState("");
   const clickHandler = (e) => {
-    if (document.querySelector("header").classList.contains("header-color")) {
+    if (darkMode === true) {
       setDark("dark");
     } else {
       setDark("");
@@ -266,7 +266,7 @@ function Slider() {
           <img src={img} alt="" />
         </div>
         <div className="right-slider-box">
-          <div className="find-top">
+          <div className={`find-top ${darkMode ? "top-dark" : ""}`}>
             <h1 className="big">ARC</h1>
             <h1 className="small">ARC</h1>
           </div>
@@ -292,7 +292,7 @@ function Slider() {
       <div
         data-aos="fade-down"
         style={{ marginBottom: "6rem" }}
-        className="find-top road-top"
+        className={`find-top ${darkMode ? "top-dark" : ""}`}
       >
         <h1 className="big">COLLECT THEM ALL</h1>
         <h1 className="small">COLLECT THEM ALL</h1>

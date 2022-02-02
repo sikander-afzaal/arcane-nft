@@ -2,12 +2,12 @@ import React from "react";
 import "./Season.css";
 import circle from "../../../Assets/Elements-66.png";
 import letter from "../../../Assets/Elements-28.png";
-function Season() {
+function Season({ dark }) {
   return (
     <div data-aos="fade-right" data-aos-delay="1000" className="season">
-      <div className="find-top">
-        <h1 className="small">SEASONS</h1>
+      <div className={`find-top ${dark ? "top-dark" : ""}`}>
         <h1 className="big">SEASONS</h1>
+        <h1 className="small">SEASONS</h1>
       </div>
       <div className="season-bot">
         <div className="left-season">
@@ -24,7 +24,7 @@ function Season() {
             </div>
             <div className="right-desc">
               <h2>MYSTERY BOX</h2>
-              <p>
+              <p className={`${dark ? "dark-p" : ""}`}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
                 dolores vero consequuntur optio cupiditate laboriosam fuga,
                 voluptatibus magnam. Quisquam, ducimus.
@@ -37,7 +37,7 @@ function Season() {
             </div>
             <div className="right-desc">
               <h2>MYSTERY BOX</h2>
-              <p>
+              <p className={`${dark ? "dark-p" : ""}`}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
                 dolores vero consequuntur optio cupiditate laboriosam fuga,
                 voluptatibus magnam. Quisquam, ducimus.

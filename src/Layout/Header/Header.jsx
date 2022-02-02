@@ -8,7 +8,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-function Header() {
+function Header({ darkSet }) {
   const [darkMode, setDark] = useState(false);
   const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
@@ -19,24 +19,8 @@ function Header() {
       return !prev;
     });
     document.querySelector("body").classList.toggle("dark");
-    document.querySelectorAll(".small").forEach((elem) => {
-      elem.classList.toggle("font-color");
-    });
-    document.querySelectorAll(".big").forEach((elem) => {
-      elem.classList.toggle("font-color2");
-    });
-    document.querySelector(".shape-wrapper").classList.toggle("bg");
-    document.querySelector(".bg-triangle-2").classList.toggle("bg");
-    document.querySelector(".bg-triangle").classList.toggle("bg");
-    document.querySelectorAll(".right-desc p").forEach((item) => {
-      item.classList.toggle("white");
-    });
-    document.querySelector(".right_top-collect p").classList.toggle("white");
-    document.querySelector(".collect_right p").classList.toggle("white");
-    document.querySelector(".open-box-slider").classList.toggle("dark");
-    document.querySelector(".qr").classList.toggle("bg");
-    document.querySelector(".footer").classList.toggle("header-color");
     setDark((prev) => !prev);
+    darkSet(!darkHead);
   };
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -64,7 +48,7 @@ function Header() {
       <div className="center-header">
         <ul
           className={`menu ${
-            active ? `current ${menuDark ? "dark" : ""}` : ""
+            active ? `current ${darkHead ? "dark" : ""}` : ""
           }`}
         >
           <li onClick={darker} className={`switch ${darkMode ? "active" : ""}`}>

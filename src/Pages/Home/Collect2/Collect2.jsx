@@ -10,7 +10,7 @@ import img5 from "../../../Assets/circle/Elements-06.png";
 import img6 from "../../../Assets/circle/Elements-07.png";
 import img7 from "../../../Assets/circle/Elements-08.png";
 import letter from "../../../Assets/a.svg";
-function Collect2() {
+function Collect2({ dark }) {
   const data = [
     {
       identifier: "wallet",
@@ -130,11 +130,14 @@ function Collect2() {
       </div>
       <div className="collect2_right">
         <div data-aos="fade-left" className="right_top-collect">
-          <div data-aos="fade-down" className="find-top">
+          <div
+            data-aos="fade-down"
+            className={`find-top ${dark ? "top-dark" : ""}`}
+          >
             <h1 className="big">ARCANE STATION</h1>
             <h1 className="small">ARCANE STATION</h1>
           </div>
-          <p>
+          <p className={`${dark ? "dark-p" : ""}`}>
             Arcane station will feture both live projects, and future projects.
             To have an idea of what Arcane team is working on.
           </p>

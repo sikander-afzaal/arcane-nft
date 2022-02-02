@@ -191,21 +191,23 @@ header * {
   mix-blend-mode: normal !important;
   background-color: transparent !important;
 }
-.dark h2 {
+.dark h2,
+.dark-h1 {
   color: #13c6f7 !important;
 }
-.dark p {
-  color: white;
+.dark-p {
+  color: white !important;
 }
-.dark h1 {
+.top-dark h1:last-of-type {
   color: #13c6f7;
+}
+.top-dark h1:first-of-type {
+  color: rgba(226, 218, 254, 0.1);
 }
 .font-color {
   color: #13c6f7 !important;
 }
-.font-color2 {
-  color: rgba(226, 218, 254, 0.1) !important;
-}
+
 .header-color {
   background-color: #262626 !important;
 }

@@ -6,9 +6,9 @@ import insta from "../../Assets/social/Elements-124.png";
 import twitter from "../../Assets/social/Elements-125.png";
 import tiktok from "../../Assets/social/Elements-126.png";
 import telegram from "../../Assets/social/Elements-127.png";
-function Footer() {
+function Footer({ dark }) {
   return (
-    <div className="footer">
+    <div className={`footer ${dark ? "header-color" : ""}`}>
       <div className="footer-left">
         <img className="footer-logo" src={logo} alt="" />
         <div className="social-div-footer">

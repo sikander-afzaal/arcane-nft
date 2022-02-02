@@ -45,8 +45,9 @@
   width: max-content;
 }
 .bg-box img {
-  max-width: 100%;
+  max-width: 321px;
   object-fit: contain;
+  max-height: 211px;
 }
 .buy-arcane-div {
   display: flex;
@@ -174,8 +175,12 @@
     color: #8d8d8d;
     font-size: 1.6rem;
   }
+  .token_hero {
+    padding: 0rem 4rem;
+    width: 100%;
+  }
   .bg-box img {
-    max-width: 90%;
+    max-width: 190px;
   }
 }
 @media screen and (max-width: 1349px) {

@@ -237,7 +237,7 @@
   .bg-box-mobile {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
   .bg-box-mobile h1 {
@@ -279,7 +279,7 @@
 }
 @media screen and (max-width: 500px) {
   .bg-box-mobile h1 {
-    font-size: 3.8rem;
+    font-size: 36px;
   }
   .address-div {
     width: 100%;

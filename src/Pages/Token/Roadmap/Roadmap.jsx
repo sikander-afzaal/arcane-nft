@@ -3,12 +3,16 @@ import "./Roadmap.css";
 function Roadmap({ dark }) {
   // <i className="far fa-check-circle"></i>;
   return (
-    <div data-aos="fade-top" data-aos-delay="800" className="roadmap">
-      <div className={`find-top ${dark ? "top-dark" : ""}`}>
+    <div className="roadmap">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="600"
+        className={`find-top ${dark ? "top-dark" : ""}`}
+      >
         <h1 className="big">ROADMAP</h1>
         <h1 className="small">ROADMAP</h1>
       </div>
-      <div className="roadmap-grid">
+      <div data-aos="fade-left" data-aos-delay="800" className="roadmap-grid">
         <div className="road-box blue-box">
           <i className="far fa-check-circle"></i>
           <p>New Website Launched</p>

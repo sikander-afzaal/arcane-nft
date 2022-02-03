@@ -16,7 +16,7 @@ function Status({ dark }) {
       </div>
       <div
         data-aos="fade-right"
-        data-aos-delay="1000"
+        data-aos-delay="600"
         className="status-box-div"
       >
         <div className="status-box">

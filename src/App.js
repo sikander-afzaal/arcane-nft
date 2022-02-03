@@ -22,7 +22,6 @@ function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-    AOS.refreshHard();
   }, [click]);
   return (
     <div className="App">

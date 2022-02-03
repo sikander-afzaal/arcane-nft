@@ -9,18 +9,25 @@ import "aos/dist/aos.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   const [dark, setDark] = useState(false);
+  const [click, setClick] = useState(1);
+
   const darkMode = (value) => {
     return setDark(value);
+  };
+  const clickHandler = (value) => {
+    setClick((prev) => {
+      return (prev += value);
+    });
   };
   useEffect(() => {
     AOS.init();
     AOS.refresh();
     AOS.refreshHard();
-  }, []);
+  }, [click]);
   return (
     <div className="App">
       <Router>
-        <Header darkSet={darkMode} />
+        <Header click={clickHandler} darkSet={darkMode} />
         <Routes>
           <Route exact path="/" element={<Home dark={dark} />}></Route>
           <Route path="/Token" element={<Token dark={dark} />}></Route>

@@ -8,7 +8,7 @@ import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
-function Header({ darkSet }) {
+function Header({ darkSet, click }) {
   const [darkMode, setDark] = useState(false);
   const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
@@ -71,6 +71,7 @@ function Header({ darkSet }) {
           <li
             onClick={() => {
               setActive((prev) => !prev);
+              click(1);
             }}
             className="bottom-border"
           >
@@ -87,6 +88,7 @@ function Header({ darkSet }) {
           <li
             onClick={() => {
               setActive((prev) => !prev);
+              click(1);
             }}
             className="bottom-border"
           >

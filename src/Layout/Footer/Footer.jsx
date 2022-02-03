@@ -22,7 +22,7 @@ function Footer({ dark }) {
             </a>
             <a
               target={"blank"}
-              href="https:instagram.com/arcanetokenbnb?utm_medium=copy_link"
+              href="https://instagram.com/arcanetokenbnb?utm_medium=copy_link"
             >
               <img className="social-icon" src={insta} alt="" />
             </a>

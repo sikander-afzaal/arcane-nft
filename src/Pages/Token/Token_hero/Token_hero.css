@@ -34,13 +34,21 @@
 .bg-box {
   position: relative;
 }
-.bg-box p {
+.text-div-abs {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.bg-box p:nth-of-type(1) {
   color: #00498a;
   font-size: 5.5rem;
+  font-weight: bold;
+  width: max-content;
+}
+.bg-box p:nth-of-type(2) {
+  color: #00498a;
+  font-size: 1.6rem;
   font-weight: bold;
   width: max-content;
 }
@@ -71,11 +79,12 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  height: 50%;
-  width: 96.2%;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  top: 0;
   border-radius: 25px;
   z-index: 10;
-  top: 40%;
   background-color: rgba(0, 200, 247, 0.8);
   color: white;
   font-size: 1.8rem;
@@ -97,7 +106,7 @@
   position: absolute;
   top: -25%;
 }
-.address-div p:last-child {
+.address-div span {
   background-color: white;
   padding: 10px 20px;
   border-radius: 25px;
@@ -107,7 +116,7 @@
   box-shadow: 3px 2px 10px 0px rgb(0 0 0 / 60%);
 }
 
-.address-div p:last-child::before {
+.address-div span::before {
   content: "";
   width: 35%;
   max-width: 1200px;
@@ -175,7 +184,8 @@
   }
 }
 @media screen and (max-width: 1478px) {
-  .address-div p {
+  .address-div p,
+  .address-div span {
     color: #8d8d8d;
     font-size: 1.6rem;
   }
@@ -197,9 +207,13 @@
   .buy-arcane-div {
     width: 100%;
   }
+  .bg-box p:nth-of-type(2) {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 1349px) {
-  .address-div p {
+  .address-div p,
+  .address-div span {
     color: #8d8d8d;
     font-size: 1.4rem;
   }
@@ -217,6 +231,9 @@
   }
   .bg-box:nth-of-type(2) img {
     max-width: 110px;
+  }
+  .abosulte-copy {
+    inset: 0;
   }
 }
 @media screen and (max-width: 770px) {
@@ -256,18 +273,21 @@
   .letter {
     box-shadow: none !important;
   }
-  .address-div p {
+  .address-div p,
+  .address-div span {
     font-size: 1.7rem;
   }
 }
 
 @media screen and (max-width: 653px) {
-  .address-div p {
+  .address-div p,
+  .address-div span {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 653px) {
-  .address-div p {
+  .address-div p,
+  .address-div span {
     font-size: 1.2rem;
   }
 }
@@ -297,15 +317,4 @@
   .bg-mobile-box {
     width: 100%;
   }
-}
-@media screen and (max-width: 444px) {
-  /* .token_hero-left .find-top .small {
-    font-size: 3.5rem;
-  }
-  .token_hero-left .find-top .big {
-    font-size: 4rem;
-  }
-  .token_hero-left .find-top {
-    min-height: 110px;
-  } */
 }

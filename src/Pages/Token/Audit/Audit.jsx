@@ -6,7 +6,7 @@ import shape from "../../../Assets/Token/Elements-70.png";
 import pdf from "../../../Assets/Token/buy.pdf";
 function Audit({ dark }) {
   return (
-    <div className="audit">
+    <div data-aos-duration="400" data-aos="fade-top" className="audit">
       <div
         data-aos="fade-bottom"
         className={`find-top ${dark ? "top-dark" : ""}`}

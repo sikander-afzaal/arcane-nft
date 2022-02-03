@@ -15,6 +15,7 @@ function App() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    AOS.refreshHard();
   }, []);
   return (
     <div className="App">

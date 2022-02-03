@@ -37,15 +37,24 @@ function Token_hero({ dark }) {
         <div className="left-bg-div desktop-token">
           <div className="bg-box">
             <img src={dark ? bg1Dark : bg1} alt="" />
-            <p className={`${dark ? "dark-p" : ""}`}>9852</p>
+            <div className="text-div-abs">
+              <p className={`${dark ? "dark-p" : ""}`}>9852</p>
+              <p className={`${dark ? "dark-p" : ""}`}>Arcane Holders</p>
+            </div>
           </div>
           <div className="bg-box">
             <img src={dark ? bg2Dark : bg2} alt="" />
-            <p className={`${dark ? "dark-p" : ""}`}>10%</p>
+            <div className="text-div-abs">
+              <p className={`${dark ? "dark-p" : ""}`}>10%</p>
+              <p className={`${dark ? "dark-p" : ""}`}>Total Token Burn</p>
+            </div>
           </div>
           <div className="bg-box">
             <img src={dark ? bg3Dark : bg3} alt="" />
-            <p className={`${dark ? "dark-p" : ""}`}>25K+</p>
+            <div className="text-div-abs">
+              <p className={`${dark ? "dark-p" : ""}`}>25K+</p>
+              <p className={`${dark ? "dark-p" : ""}`}>Telegram Members</p>
+            </div>
           </div>
         </div>
         <div className="mobile-token bg-mobile-box">
@@ -84,14 +93,14 @@ function Token_hero({ dark }) {
             <img src={letter} alt="" /> BUY NOW
           </a>
           <div className="address-div">
-            <div onClick={copyToClipboard} className="abosulte-copy">
-              <i className="far fa-copy"></i>
-              Copy To Clipboard
-            </div>
             <p>Contract Address</p>
-            <p className="address">
+            <span className="address">
+              <div onClick={copyToClipboard} className="abosulte-copy">
+                <i className="far fa-copy"></i>
+                Copy To Clipboard
+              </div>
               0x477565b356b3973d16e8cd837c6970613f13e24a
-            </p>
+            </span>
           </div>
         </div>
         <div className="token-hero-social">
@@ -105,11 +114,11 @@ function Token_hero({ dark }) {
             </a>
             <a
               target={"blank"}
-              href="https:instagram.com/arcanetokenbnb?utm_medium=copy_link"
+              href="https://instagram.com/arcanetokenbnb?utm_medium=copy_link"
             >
               <img className="social-icon" src={insta} alt="" />
             </a>
-            <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
+            <a target={"blank"} href="https://tiktok.com/@arcanetokenbnb">
               <img className="social-icon" src={tiktok} alt="" />
             </a>
             <a

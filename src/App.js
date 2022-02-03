@@ -20,8 +20,11 @@ function App() {
     });
   };
   useEffect(() => {
-    AOS.init();
-    AOS.refresh();
+    setTimeout(() => {
+      AOS.init();
+      AOS.refreshHard();
+      AOS.refresh();
+    }, 500);
   }, [click]);
   return (
     <div className="App">

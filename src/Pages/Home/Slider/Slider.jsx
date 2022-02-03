@@ -17,9 +17,36 @@ import gold3 from "../../../Assets/Slider/gold (3).png";
 import epic from "../../../Assets/Slider/epic (1).png";
 import epic2 from "../../../Assets/Slider/epic (2).png";
 import star from "../../../Assets/star.svg";
-import eye from "../../../Assets/eye.svg";
+import eye from "../../../Assets/eye.png";
 import letter from "../../../Assets/a.svg";
-import owner from "../../../Assets/Group 356.png";
+import silverOpen1 from "../../../Assets/Slider/Open slider/SILVER/Pizza_D_ARC.png";
+import silverOpen1_bg from "../../../Assets/Slider/Open slider/SILVER/Background-2.jpg";
+import silverOpen2 from "../../../Assets/Slider/Open slider/SILVER/Academy_ARC.png";
+import silverOpen2_bg from "../../../Assets/Slider/Open slider/SILVER/Background for ACADEMY.jpg";
+import silverOpen3 from "../../../Assets/Slider/Open slider/SILVER/ARC.png";
+import silverOpen3_bg from "../../../Assets/Slider/Open slider/SILVER/Background-4.jpg";
+import silverOpen4 from "../../../Assets/Slider/Open slider/SILVER/Nurse ARC.png";
+import silverOpen4_bg from "../../../Assets/Slider/Open slider/SILVER/Background.jpg";
+import silverOpen5 from "../../../Assets/Slider/Open slider/SILVER/Officer_ARC.png";
+import silverOpen5_bg from "../../../Assets/Slider/Open slider/SILVER/Background-2.jpg";
+import goldOpen1 from "../../../Assets/Slider/Open slider/GOLD/Astronaut_ARC.png";
+import goldOpen1_bg from "../../../Assets/Slider/Open slider/GOLD/Background for Astronaut.jpg";
+import goldOpen2 from "../../../Assets/Slider/Open slider/GOLD/Basket_Player_ARC.png";
+import goldOpen2_bg from "../../../Assets/Slider/Open slider/GOLD/Background for BPARC.jpg";
+import goldOpen3 from "../../../Assets/Slider/Open slider/GOLD/Elite_ARC.png";
+import goldOpen3_bg from "../../../Assets/Slider/Open slider/GOLD/Background for Elite.jpg";
+import diamondOpen1 from "../../../Assets/Slider/Open slider/DIAMOND/Royal_Star_ARC.png";
+import diamondOpen1_bg from "../../../Assets/Slider/Open slider/DIAMOND/Royal-star-bg.jpg";
+import diamondOpen2 from "../../../Assets/Slider/Open slider/DIAMOND/Starship_ARC.png";
+import diamondOpen2_bg from "../../../Assets/Slider/Open slider/DIAMOND/Starship Background.jpg";
+import epicOpen1 from "../../../Assets/Slider/Open slider/EPIC/Justice_ARC.png";
+import epicOpen1_bg from "../../../Assets/Slider/Open slider/EPIC/Background for Justice ARC.jpg";
+import epicOpen2 from "../../../Assets/Slider/Open slider/EPIC/Masked_Devil_ARC.png";
+import epicOpen2_bg from "../../../Assets/Slider/Open slider/EPIC/Background for Masked Devil.jpg";
+import legendOpen1 from "../../../Assets/Slider/Open slider/LEGENDARY/The_Light_Knight_ARC.png";
+import legendOpen1_bg from "../../../Assets/Slider/Open slider/LEGENDARY/Background for LightKnight.jpg";
+import legendOpen2 from "../../../Assets/Slider/Open slider/LEGENDARY/Golden_ARC.png";
+import legendOpen2_bg from "../../../Assets/Slider/Open slider/LEGENDARY/Background for GoldenARC.jpg";
 function Slider({ darkMode }) {
   const images = [
     silver3,
@@ -40,157 +67,201 @@ function Slider({ darkMode }) {
   const data = [
     {
       num: 0,
-      img: silver3,
+      img: silverOpen3,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Silver",
+      background: silverOpen3_bg,
+      star: [1],
+      name: "ARC",
     },
     {
       num: 1,
-      img: silver2,
+      img: silverOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Silver",
+      background: silverOpen2_bg,
+      star: [1],
+      name: "ACADEMY ARC",
     },
     {
       num: 2,
-      img: silver1,
+      img: silverOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Silver",
+      background: silverOpen1_bg,
+      star: [1],
+      name: "PIZZA DELIVERY ARC",
     },
     {
       num: 3,
-      img: silver4,
+      img: silverOpen4,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Silver",
+      background: silverOpen4_bg,
+      star: [1],
+      name: "NURSE ARC",
     },
     {
       num: 4,
-      img: silver5,
+      img: silverOpen5,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Silver",
+      background: silverOpen5_bg,
+      star: [1],
+      name: "OFFICER ARC",
+      class: "officer",
     },
     {
       num: 5,
-      img: gold,
+      img: goldOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Gold",
+      background: goldOpen1_bg,
+      star: [1, 2],
+      name: "ASTRONAUT ARC",
     },
     {
       num: 6,
-      img: gold2,
+      img: goldOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Gold",
+      background: goldOpen2_bg,
+      star: [1, 2],
+      name: "BASKET PLAYER ARC",
     },
     {
       num: 7,
-      img: gold3,
+      img: goldOpen3,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Gold",
+      background: goldOpen3_bg,
+      star: [1, 2],
+      name: "ELITE ARC",
     },
     {
       num: 8,
-      img: diamond,
+      img: diamondOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Diamond",
+      background: diamondOpen2_bg,
+      star: [1, 2, 3],
+
+      name: "STARSHIP ARC",
     },
     {
       num: 9,
-      img: diamond2,
+      img: diamondOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Diamond",
+      background: diamondOpen1_bg,
+      star: [1, 2, 3],
+      name: "ROYAL STAR ARC",
     },
     {
       num: 10,
-      img: epic,
+      img: epicOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Epic",
+      background: epicOpen1_bg,
+      star: [1, 2, 3, 4],
+      name: "JUSTICE ARC",
     },
     {
       num: 11,
-      img: epic2,
+      img: epicOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Epic",
+      background: epicOpen2_bg,
+      star: [1, 2, 3, 4],
+      name: "MASKED DEVIL ARC",
     },
     {
       num: 12,
-      img: legend1,
+      img: legendOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Legendary",
+      background: legendOpen1_bg,
+      star: [1, 2, 3, 4, 5],
+      name: "THE LIGHT KNIGHT ARC",
     },
     {
       num: 13,
-      img: legend2,
+      img: legendOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
               may have not decided what to do outside of highschool yet, but she
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
-      color: "green",
+      color: "Legendary",
+      background: legendOpen2_bg,
+      star: [1, 2, 3, 4, 5],
+      name: "GOLDEN ARC",
     },
   ];
   const [open, setOpen] = useState(false);
@@ -213,6 +284,10 @@ function Slider({ darkMode }) {
   const [color, setColor] = useState("");
   const [img, setImg] = useState("");
   const [dark, setDark] = useState("");
+  const [bg, setBg] = useState("");
+  const [starA, setStar] = useState([]);
+  const [name, setName] = useState("");
+  const [class2, setClass] = useState("");
   const clickHandler = (e) => {
     if (darkMode === true) {
       setDark("dark");
@@ -221,14 +296,17 @@ function Slider({ darkMode }) {
     }
     setOpen(true);
     const dataSet = e.target.dataset.num;
-    console.log(e.target);
     data.forEach((elem) => {
       if (elem.num == dataSet) {
-        console.log(elem.num);
-        console.log(dataSet);
         setDesc(elem.desc);
         setColor(elem.color);
         setImg(elem.img);
+        setBg(elem.background);
+        setStar(elem.star);
+        setName(elem.name);
+        if (elem.class != null) {
+          setClass(elem.class);
+        }
       }
     });
   };
@@ -263,29 +341,24 @@ function Slider({ darkMode }) {
           className="fas fa-times close-box"
         ></i>
         <div className="left-slider-box">
-          <img src={img} alt="" />
+          <img src={bg} alt="" className="abs-img-bg" />
+          <img className={`girl-img ${class2}`} src={img} alt="" />
         </div>
         <div className="right-slider-box">
-          <div className={`find-top ${darkMode ? "top-dark" : ""}`}>
-            <h1 className="big">ARC</h1>
-            <h1 className="small">ARC</h1>
+          <div className="arc-title">
+            <h1 className={`arc-name ${darkMode ? "dark-p" : ""}`}>{name}</h1>
           </div>
           <div className="rarity-div">
-            <p className={`rarity-box ${color}`}>Gold Arcane</p>
+            <p className={`rarity-box ${color}`}>{`${color} Arc`}</p>
             <div className="star-div">
-              <img src={star} alt="" />
-              <img src={star} alt="" />
+              {starA.map((elem, index) => {
+                return <img src={star} key={index} alt="" />;
+              })}
             </div>
           </div>
           <div className="bio-div">
             <h1>BIO</h1>
             <p className="desc-bio">{desc}</p>
-          </div>
-          <div className="owners-div">
-            <img src={owner} alt="" />
-            <p>
-              600 <br /> OWNERS
-            </p>
           </div>
         </div>
       </div>

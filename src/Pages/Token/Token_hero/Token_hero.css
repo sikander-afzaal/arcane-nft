@@ -51,8 +51,9 @@
 }
 .buy-arcane-div {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 85%;
+  overflow: visible;
   justify-content: space-between;
 }
 .address-div {
@@ -63,6 +64,7 @@
   padding: 10px;
   position: relative;
   gap: 5px;
+  overflow: visible;
 }
 .abosulte-copy {
   display: flex;
@@ -90,8 +92,10 @@
   color: #8d8d8d;
   font-size: 1.8rem;
 }
-.address-div p:first-child {
+.address-div p:first-of-type {
   margin-left: 10px;
+  position: absolute;
+  top: -25%;
 }
 .address-div p:last-child {
   background-color: white;
@@ -189,6 +193,9 @@
   }
   .bg-box:nth-of-type(2) img {
     max-width: 110px;
+  }
+  .buy-arcane-div {
+    width: 100%;
   }
 }
 @media screen and (max-width: 1349px) {

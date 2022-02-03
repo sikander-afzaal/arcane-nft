@@ -64,15 +64,25 @@ function Token_hero({ dark }) {
               <h1 className={`${dark ? "dark-p" : ""}`}>25K+</h1>
               <p className={`${dark ? "dark-p" : ""}`}>Telegram Members</p>
             </div>
-            <button className="letter">
+            <a
+              href="https://pancakeswap.finance/swap/0x477565b356b3973d16e8cd837c6970613f13e24a"
+              target="blank"
+              className="letter"
+              style={{ textDecoration: "none" }}
+            >
               <img src={letter} alt="" /> BUY NOW
-            </button>
+            </a>
           </div>
         </div>
         <div className="buy-arcane-div">
-          <button className="desktop-token">
+          <a
+            href="https://pancakeswap.finance/swap/0x477565b356b3973d16e8cd837c6970613f13e24a"
+            target="blank"
+            className="desktop-token letter"
+            style={{ textDecoration: "none" }}
+          >
             <img src={letter} alt="" /> BUY NOW
-          </button>
+          </a>
           <div className="address-div">
             <div onClick={copyToClipboard} className="abosulte-copy">
               <i className="far fa-copy"></i>

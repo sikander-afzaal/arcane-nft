@@ -5,6 +5,7 @@ function Roadmap({ dark }) {
   return (
     <div className="roadmap">
       <div
+        data-aos-duration="800"
         data-aos="fade-right"
         data-aos-delay="600"
         className={`find-top ${dark ? "top-dark" : ""}`}
@@ -12,7 +13,12 @@ function Roadmap({ dark }) {
         <h1 className="big">ROADMAP</h1>
         <h1 className="small">ROADMAP</h1>
       </div>
-      <div data-aos="fade-left" data-aos-delay="800" className="roadmap-grid">
+      <div
+        data-aos-duration="1000"
+        data-aos="fade-left"
+        data-aos-delay="700"
+        className="roadmap-grid"
+      >
         <div className="road-box blue-box">
           <i className="far fa-check-circle"></i>
           <p>New Website Launched</p>

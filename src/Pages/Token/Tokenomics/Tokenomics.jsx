@@ -5,7 +5,12 @@ import circle2 from "../../../Assets/Token/Elements-68.png";
 import circle3 from "../../../Assets/Token/Elements-69.png";
 function Tokenomics({ dark }) {
   return (
-    <div data-aos="fade-top" data-aos-delay="800" className="tokenomics">
+    <div
+      data-aos-duration="800"
+      data-aos="fade-top"
+      data-aos-delay="800"
+      className="tokenomics"
+    >
       <div className={`find-top ${dark ? "top-dark" : ""}`}>
         <h1 className="big">TOKENOMICS</h1>
         <h1 className="small">TOKENOMICS</h1>

@@ -15,14 +15,24 @@ function Audit({ dark }) {
         <h1 className="small">Whitepaper & Audit</h1>
       </div>
       <div className="audit-top">
-        <div data-aos-delay="400" data-aos="fade-right" className="audit-card">
+        <div
+          data-aos-duration="800"
+          data-aos-delay="400"
+          data-aos="fade-right"
+          className="audit-card"
+        >
           <img src={card} alt="" />
           <p className={`${dark ? "dark-p" : ""}`}>AUDIT</p>
           <a download="How To Buy" href={pdf} className="download">
             <i className="fas fa-download"></i>
           </a>
         </div>
-        <div data-aos-delay="400" data-aos="fade-left" className="audit-card">
+        <div
+          data-aos-duration="800"
+          data-aos-delay="400"
+          data-aos="fade-left"
+          className="audit-card"
+        >
           <img src={card2} alt="" />
           <p className={`${dark ? "dark-p" : ""}`}>WHITEPAPER</p>
           <a download="How To Buy" href={pdf} className="download">

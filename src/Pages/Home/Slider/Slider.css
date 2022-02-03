@@ -320,8 +320,6 @@
   pointer-events: initial !important;
   opacity: 1;
 }
-.officer {
-}
 @media screen and (max-width: 1643px) {
   .splide__arrow--prev {
     left: 1em !important;

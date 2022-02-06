@@ -20,7 +20,7 @@
   width: 100%;
 }
 .status-box {
-  background-color: lightgray;
+  background-color: white;
   width: 18%;
   display: flex;
   align-items: center;
@@ -33,7 +33,10 @@
   position: relative;
 }
 .white-bg {
-  background-color: white;
+  background-color: grey;
+}
+.white-bg p {
+  color: white !important;
 }
 .status-box img {
   max-width: 100%;

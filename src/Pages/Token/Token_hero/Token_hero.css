@@ -7,6 +7,9 @@
   overflow: visible;
   margin-top: 2rem;
 }
+.token-hero * {
+  overflow: visible;
+}
 .token_hero-left {
   display: flex;
   justify-content: center;

@@ -13,7 +13,6 @@ function Header({ darkSet, click }) {
   const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
   const [darkHead, setDarkHead] = useState(false);
-  const [menuDark, setMenu] = useState("");
   const darker = (e) => {
     setDarkHead((prev) => {
       return !prev;

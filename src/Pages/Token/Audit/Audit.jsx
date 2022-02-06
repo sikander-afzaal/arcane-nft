@@ -4,6 +4,7 @@ import card from "../../../Assets/Token/Elements-18.png";
 import card2 from "../../../Assets/Token/Elements-19.png";
 import shape from "../../../Assets/Token/Elements-70.png";
 import pdf from "../../../Assets/Token/buy.pdf";
+import pdf2 from "../../../Assets/audit.pdf";
 function Audit({ dark }) {
   return (
     <div data-aos-duration="400" data-aos="fade-top" className="audit">
@@ -23,7 +24,7 @@ function Audit({ dark }) {
         >
           <img src={card} alt="" />
           <p className={`${dark ? "dark-p" : ""}`}>AUDIT</p>
-          <a download="How To Buy" href={pdf} className="download">
+          <a download="Audit" href={pdf2} className="download">
             <i className="fas fa-download"></i>
           </a>
         </div>

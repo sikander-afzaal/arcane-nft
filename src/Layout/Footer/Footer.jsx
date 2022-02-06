@@ -6,6 +6,7 @@ import insta from "../../Assets/social/Elements-124.png";
 import twitter from "../../Assets/social/Elements-125.png";
 import tiktok from "../../Assets/social/Elements-126.png";
 import telegram from "../../Assets/social/Elements-127.png";
+import pdf from "../../Assets/audit.pdf";
 function Footer({ dark }) {
   return (
     <div className={`footer ${dark ? "header-color" : ""}`}>
@@ -42,7 +43,9 @@ function Footer({ dark }) {
         <div className="footer-right_col1">
           <h2>INFORMATION</h2>
           <a href="#">Whitepaper</a>
-          <a href="#">Audit</a>
+          <a href={pdf} download="audit">
+            Audit
+          </a>
           <a href="https://dxsale.app/app/v3/dxlockview?id=0&add=0xa6B98C7f4fE71244AD03B9C83b718023cd16DD25&type=lplock&chain=BSC">
             Liquidity Lock
           </a>

@@ -217,14 +217,14 @@ header .menu li:last-child a {
     width: 95%;
   }
 }
-@media screen and (max-width: 1314px) {
+@media screen and (max-width: 1414px) {
   header {
     width: 100%;
     border-radius: 0px;
     margin-top: 0rem;
   }
 }
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 1347px) {
   header .menu li a {
     font-size: 1.6rem;
     margin-right: 1.9rem;
@@ -238,7 +238,7 @@ header .menu li:last-child a {
     font-size: 1.8rem;
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1247px) {
   .desktop-connect {
     display: none;
   }

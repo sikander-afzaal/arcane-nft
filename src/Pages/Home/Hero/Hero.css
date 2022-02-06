@@ -10,6 +10,7 @@
   width: 100%;
 }
 .hero img,
+.hero video,
 .hero a {
   max-width: 100%;
   width: 90%;

@@ -13,7 +13,7 @@
 .hero a {
   max-width: 100%;
   width: 90%;
-  margin: 0;
+  margin: 0 !important;
   object-fit: contain;
 }
 .splide__pagination {
@@ -39,6 +39,9 @@
   }
   .mobile-bg {
     display: block;
+  }
+  .hero img {
+    margin: auto !important;
   }
   .hero {
     width: 100%;

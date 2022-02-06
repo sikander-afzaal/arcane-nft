@@ -118,8 +118,8 @@ header .menu li:last-child a {
   top: 100%;
   right: 50%;
   transform: translateX(50%);
-  color: black;
-  background-color: white;
+  color: #00498a;
+  background-color: lightgray;
   height: auto;
   width: max-content;
   font-size: 1rem;
@@ -462,9 +462,10 @@ header .menu li:last-child a {
 }
 @media screen and (max-width: 538px) {
   .soon:before {
-    top: -2%;
-    right: 32%;
     transform: translate(50%, -50%);
+    content: "soon";
+    top: 43%;
+    right: 19%;
   }
 }
 @media screen and (max-width: 443px) {

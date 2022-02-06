@@ -91,7 +91,7 @@ function Header({ darkSet, click }) {
             onClick={() => {
               setActive((prev) => !prev);
             }}
-            className="bottom-border"
+            className="bottom-border soon"
           >
             <a href="#">PROFILE</a>
           </li>
@@ -100,7 +100,7 @@ function Header({ darkSet, click }) {
             onClick={() => {
               setActive((prev) => !prev);
             }}
-            className="bottom-border"
+            className="bottom-border soon"
           >
             <a href="#">MYSTERY BOX</a>
           </li>
@@ -108,7 +108,7 @@ function Header({ darkSet, click }) {
             onClick={() => {
               setActive((prev) => !prev);
             }}
-            className="bottom-border"
+            className="bottom-border soon"
           >
             <a href="#">MARKET PLACE</a>
           </li>
@@ -116,7 +116,7 @@ function Header({ darkSet, click }) {
             onClick={() => {
               setActive((prev) => !prev);
             }}
-            className="bottom-border"
+            className="bottom-border soon"
           >
             <a href="#">MY ITEMS</a>
           </li>
@@ -124,7 +124,7 @@ function Header({ darkSet, click }) {
             onClick={() => {
               setActive((prev) => !prev);
             }}
-            className="bottom-border"
+            className="bottom-border soon"
           >
             <a href="#">PROFILE SETTING</a>
           </li>

@@ -118,8 +118,8 @@ header .menu li:last-child a {
   top: 100%;
   right: 50%;
   transform: translateX(50%);
-  color: #00498a;
-  background-color: lightgray;
+  color: white;
+  background-color: #00498a;
   height: auto;
   width: max-content;
   font-size: 1rem;

@@ -149,7 +149,7 @@ function Collect2({ dark }) {
           </div>
           <p>{desc}</p>
           <button>
-            <img src={letter} alt="" /> COMING SOON
+            <img src={letter} alt="" /> BUY NOW
           </button>
         </div>
       </div>

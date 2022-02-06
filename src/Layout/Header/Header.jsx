@@ -42,7 +42,9 @@ function Header({ darkSet, click }) {
     >
       <div className="left-header">
         <div className="logo_area">
-          <img src={logo} alt="img" />
+          <Link to="/">
+            <img src={logo} alt="img" />
+          </Link>
         </div>
       </div>
       <div className="center-header">
@@ -80,20 +82,21 @@ function Header({ darkSet, click }) {
           <li
             onClick={() => {
               setActive((prev) => !prev);
-            }}
-            className="bottom-border"
-          >
-            <a href="#">PROFILE</a>
-          </li>
-          <li
-            onClick={() => {
-              setActive((prev) => !prev);
               click(1);
             }}
             className="bottom-border"
           >
             <Link to="/Token">THE TOKEN</Link>
           </li>
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
+            <a href="#">PROFILE</a>
+          </li>
+
           <li
             onClick={() => {
               setActive((prev) => !prev);
@@ -116,7 +119,15 @@ function Header({ darkSet, click }) {
             }}
             className="bottom-border"
           >
-            <a href="#">HELP</a>
+            <a href="#">MY ITEMS</a>
+          </li>
+          <li
+            onClick={() => {
+              setActive((prev) => !prev);
+            }}
+            className="bottom-border"
+          >
+            <a href="#">PROFILE SETTING</a>
           </li>
 
           <li className="bottom">
@@ -138,7 +149,10 @@ function Header({ darkSet, click }) {
                   >
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
+                  <a
+                    target={"blank"}
+                    href="https://www.tiktok.com/@arcanetokenbnb"
+                  >
                     <FontAwesomeIcon
                       style={{ fontSize: " 2.5rem" }}
                       icon={faTiktok}

@@ -19,17 +19,17 @@ function Status({ dark }) {
         data-aos-delay="600"
         className="status-box-div"
       >
-        <div className="status-box">
+        <div className={`status-box ${dark ? "white-bg" : ""}`}>
           <img src={icon1} alt="" />
           <p>Arcane Holder</p>
           <p>5900</p>
         </div>
-        <div className="status-box">
+        <div className={`status-box ${dark ? "white-bg" : ""}`}>
           <img src={icon2} alt="" />
           <p>NFTs</p>
           <p>17</p>
         </div>
-        <div className="status-box">
+        <div className={`status-box ${dark ? "white-bg" : ""}`}>
           <img src={icon3} alt="" />
           <p>Pooled Arcane</p>
           <p>190,417,621</p>

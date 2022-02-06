@@ -31,7 +31,8 @@
   grid-template-rows: 1fr;
   gap: 60px;
 }
-.footer-right_col1 {
+.footer-right_col1,
+.footer-right_col2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -41,17 +42,19 @@
 .footer-right_col2 h2 {
   color: #00498a;
   font-weight: 500;
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   margin-bottom: 0.5rem;
 }
-.footer-right_col1 p,
-.footer-right_col2 p {
+.footer-right_col1 a,
+.footer-right_col2 a {
   color: #00498a;
   margin-bottom: 0.2rem;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 1.9rem;
+  text-decoration: none;
   cursor: pointer;
 }
+
 .icon-div a img {
   max-width: 100%;
   object-fit: contain;

@@ -11,9 +11,12 @@ import legend1 from "../../../Assets/Slider/legend (1).png";
 import legend2 from "../../../Assets/Slider/legend (2).png";
 import diamond from "../../../Assets/Slider/diamond (1).png";
 import diamond2 from "../../../Assets/Slider/diamond (2).png";
+import diamond3 from "../../../Assets/Slider/diamond (3).png";
 import gold from "../../../Assets/Slider/gold (1).png";
 import gold2 from "../../../Assets/Slider/gold (2).png";
 import gold3 from "../../../Assets/Slider/gold (3).png";
+import gold4 from "../../../Assets/Slider/gold (4).png";
+import gold5 from "../../../Assets/Slider/gold (5).png";
 import epic from "../../../Assets/Slider/epic (1).png";
 import epic2 from "../../../Assets/Slider/epic (2).png";
 import star from "../../../Assets/star.svg";
@@ -57,8 +60,11 @@ function Slider({ darkMode }) {
     gold,
     gold2,
     gold3,
+    gold4,
+    gold5,
     diamond,
     diamond2,
+    diamond3,
     epic,
     epic2,
     legend1,
@@ -180,6 +186,34 @@ function Slider({ darkMode }) {
     },
     {
       num: 8,
+      img: goldOpen3,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "Gold",
+      background: goldOpen3_bg,
+      star: [1, 2],
+      name: "ARCADE ARC",
+    },
+    {
+      num: 9,
+      img: goldOpen3,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "Gold",
+      background: goldOpen3_bg,
+      star: [1, 2],
+      name: "PAJAMA ARC",
+    },
+    {
+      num: 10,
       img: diamondOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
@@ -194,7 +228,7 @@ function Slider({ darkMode }) {
       name: "STARSHIP ARC",
     },
     {
-      num: 9,
+      num: 11,
       img: diamondOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
@@ -208,7 +242,21 @@ function Slider({ darkMode }) {
       name: "ROYAL STAR ARC",
     },
     {
-      num: 10,
+      num: 12,
+      img: diamondOpen1,
+      desc: ` Mae has always been a good kitty, getting straight A's, while even
+            running her highschool bookclub on the side. She always pushes
+              herself to do the best she can in everything that she does. She
+              may have not decided what to do outside of highschool yet, but she
+              does know that she'll achieve whatever she puts her mind to, no
+              matter what!"`,
+      color: "Diamond",
+      background: diamondOpen1_bg,
+      star: [1, 2, 3],
+      name: "SAKURA ARC",
+    },
+    {
+      num: 13,
       img: epicOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
@@ -222,7 +270,7 @@ function Slider({ darkMode }) {
       name: "JUSTICE ARC",
     },
     {
-      num: 11,
+      num: 14,
       img: epicOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
@@ -236,7 +284,7 @@ function Slider({ darkMode }) {
       name: "MASKED DEVIL ARC",
     },
     {
-      num: 12,
+      num: 15,
       img: legendOpen1,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
@@ -250,7 +298,7 @@ function Slider({ darkMode }) {
       name: "THE LIGHT KNIGHT ARC",
     },
     {
-      num: 13,
+      num: 16,
       img: legendOpen2,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
@@ -266,6 +314,9 @@ function Slider({ darkMode }) {
   ];
   const [open, setOpen] = useState(false);
   const [view, showEye] = useState([
+    false,
+    false,
+    false,
     false,
     false,
     false,
@@ -318,6 +369,9 @@ function Slider({ darkMode }) {
           onClick={() => {
             showEye((prev) => {
               const copy = [
+                false,
+                false,
+                false,
                 false,
                 false,
                 false,
@@ -403,6 +457,9 @@ function Slider({ darkMode }) {
                 onClick={() => {
                   showEye((prev) => {
                     const copy = [
+                      false,
+                      false,
+                      false,
                       false,
                       false,
                       false,

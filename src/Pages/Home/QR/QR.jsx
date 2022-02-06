@@ -4,6 +4,7 @@ import code from "../../../Assets/code.png";
 function QR({ dark }) {
   return (
     <div className={`qr ${dark ? "dark" : ""}`}>
+      {dark ? <div className="blur"></div> : ""}
       <div data-aos="fade-right" className="left-qr">
         <img src={code} alt="" />
       </div>

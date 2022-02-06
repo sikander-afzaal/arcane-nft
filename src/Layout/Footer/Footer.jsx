@@ -26,7 +26,7 @@ function Footer({ dark }) {
             >
               <img className="social-icon" src={insta} alt="" />
             </a>
-            <a target={"blank"} href="www.tiktok.com/@arcanetokenbnb">
+            <a target={"blank"} href="https://www.tiktok.com/@arcanetokenbnb">
               <img className="social-icon" src={tiktok} alt="" />
             </a>
             <a
@@ -41,17 +41,17 @@ function Footer({ dark }) {
       <div className="footer-right">
         <div className="footer-right_col1">
           <h2>INFORMATION</h2>
-          <p>Whitepaper</p>
-          <p>Audit</p>
-          <p>Liquidity Lock</p>
-          <p>Medium</p>
+          <a href="#">Whitepaper</a>
+          <a href="#">Audit</a>
+          <a href="https://dxsale.app/app/v3/dxlockview?id=0&add=0xa6B98C7f4fE71244AD03B9C83b718023cd16DD25&type=lplock&chain=BSC">
+            Liquidity Lock
+          </a>
         </div>
         <div className="footer-right_col2">
           <h2>LINKS</h2>
-          <p>CoinMarketCap</p>
-          <p>CoinGecko</p>
-          <p>Arcane Swap</p>
-          <p>Theme Song</p>
+          <a href="#">CoinMarketCap</a>
+          <a href="#">CoinGecko</a>
+          <a href="#">Arcane Track</a>
         </div>
       </div>
     </div>

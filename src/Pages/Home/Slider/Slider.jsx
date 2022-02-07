@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Slider.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
+import Owner from "../../../Assets/Group 356.png";
 import silver1 from "../../../Assets/Slider/silver (1).png";
 import silver2 from "../../../Assets/Slider/silver (2).png";
 import silver3 from "../../../Assets/Slider/silver (3).png";
@@ -441,6 +442,12 @@ function Slider({ darkMode }) {
           <div className="bio-div">
             <h1>BIO</h1>
             <p className="desc-bio">{desc}</p>
+          </div>
+          <div className="owners-div">
+            <img src={Owner} alt="" className="owner" />
+            <p className="owner-p">
+              600 <br /> OWNERS
+            </p>
           </div>
         </div>
       </div>

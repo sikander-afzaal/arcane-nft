@@ -22,34 +22,42 @@ import epic2 from "../../../Assets/Slider/epic (2).png";
 import star from "../../../Assets/star.svg";
 import eye from "../../../Assets/eye.png";
 import letter from "../../../Assets/a.svg";
-import silverOpen1 from "../../../Assets/Slider/Open slider/SILVER/Pizza_D_ARC.png";
-import silverOpen1_bg from "../../../Assets/Slider/Open slider/SILVER/Background-2.jpg";
-import silverOpen2 from "../../../Assets/Slider/Open slider/SILVER/Academy_ARC.png";
-import silverOpen2_bg from "../../../Assets/Slider/Open slider/SILVER/Background for ACADEMY.jpg";
-import silverOpen3 from "../../../Assets/Slider/Open slider/SILVER/ARC.png";
-import silverOpen3_bg from "../../../Assets/Slider/Open slider/SILVER/Background-4.jpg";
-import silverOpen4 from "../../../Assets/Slider/Open slider/SILVER/Nurse ARC.png";
-import silverOpen4_bg from "../../../Assets/Slider/Open slider/SILVER/Background.jpg";
-import silverOpen5 from "../../../Assets/Slider/Open slider/SILVER/Officer_ARC.png";
-import silverOpen5_bg from "../../../Assets/Slider/Open slider/SILVER/Background-2.jpg";
-import goldOpen1 from "../../../Assets/Slider/Open slider/GOLD/Astronaut_ARC.png";
-import goldOpen1_bg from "../../../Assets/Slider/Open slider/GOLD/Background for Astronaut.jpg";
-import goldOpen2 from "../../../Assets/Slider/Open slider/GOLD/Basket_Player_ARC.png";
-import goldOpen2_bg from "../../../Assets/Slider/Open slider/GOLD/Background for BPARC.jpg";
-import goldOpen3 from "../../../Assets/Slider/Open slider/GOLD/Elite_ARC.png";
-import goldOpen3_bg from "../../../Assets/Slider/Open slider/GOLD/Background for Elite.jpg";
-import diamondOpen1 from "../../../Assets/Slider/Open slider/DIAMOND/Royal_Star_ARC.png";
-import diamondOpen1_bg from "../../../Assets/Slider/Open slider/DIAMOND/Royal-star-bg.jpg";
-import diamondOpen2 from "../../../Assets/Slider/Open slider/DIAMOND/Starship_ARC.png";
-import diamondOpen2_bg from "../../../Assets/Slider/Open slider/DIAMOND/Starship Background.jpg";
-import epicOpen1 from "../../../Assets/Slider/Open slider/EPIC/Justice_ARC.png";
-import epicOpen1_bg from "../../../Assets/Slider/Open slider/EPIC/Background for Justice ARC.jpg";
-import epicOpen2 from "../../../Assets/Slider/Open slider/EPIC/Masked_Devil_ARC.png";
-import epicOpen2_bg from "../../../Assets/Slider/Open slider/EPIC/Background for Masked Devil.jpg";
-import legendOpen1 from "../../../Assets/Slider/Open slider/LEGENDARY/The_Light_Knight_ARC.png";
-import legendOpen1_bg from "../../../Assets/Slider/Open slider/LEGENDARY/Background for LightKnight.jpg";
-import legendOpen2 from "../../../Assets/Slider/Open slider/LEGENDARY/Golden_ARC.png";
-import legendOpen2_bg from "../../../Assets/Slider/Open slider/LEGENDARY/Background for GoldenARC.jpg";
+//open slider desktop-------------------------------------------------------
+import silverOpen1 from "../../../Assets/Slider/Open slider/SILVER/3.png";
+import silverOpen2 from "../../../Assets/Slider/Open slider/SILVER/1.png";
+import silverOpen3 from "../../../Assets/Slider/Open slider/SILVER/2.png";
+import silverOpen4 from "../../../Assets/Slider/Open slider/SILVER/5.png";
+import silverOpen5 from "../../../Assets/Slider/Open slider/SILVER/4.png";
+import goldOpen1 from "../../../Assets/Slider/Open slider/GOLD/2.png";
+import goldOpen2 from "../../../Assets/Slider/Open slider/GOLD/3.png";
+import goldOpen3 from "../../../Assets/Slider/Open slider/GOLD/1.png";
+import goldOpen4 from "../../../Assets/Slider/Open slider/GOLD/5.png";
+import goldOpen5 from "../../../Assets/Slider/Open slider/GOLD/4.png";
+import diamondOpen1 from "../../../Assets/Slider/Open slider/DIAMOND/1.png";
+import diamondOpen2 from "../../../Assets/Slider/Open slider/DIAMOND/2.png";
+import diamondOpen3 from "../../../Assets/Slider/Open slider/DIAMOND/3.png";
+import epicOpen1 from "../../../Assets/Slider/Open slider/EPIC/1.png";
+import epicOpen2 from "../../../Assets/Slider/Open slider/EPIC/2.png";
+import legendOpen1 from "../../../Assets/Slider/Open slider/LEGENDARY/1.png";
+import legendOpen2 from "../../../Assets/Slider/Open slider/LEGENDARY/2.png";
+// phone backgrounds ----------------------------------------------
+import silverOpen1_bgPhone from "../../../Assets/Slider/Open-phone-slider/SILVER/PIZZA-DELIVERY-ARC.png";
+import silverOpen2_bgPhone from "../../../Assets/Slider/Open-phone-slider/SILVER/ACADEMY-ARC.png";
+import silverOpen3_bgPhone from "../../../Assets/Slider/Open-phone-slider/SILVER/ARC.png";
+import silverOpen4_bgPhone from "../../../Assets/Slider/Open-phone-slider/SILVER/NURSE-ARC.png";
+import silverOpen5_bgPhone from "../../../Assets/Slider/Open-phone-slider/SILVER/OFFICER-ARC.png";
+import goldOpen1_bgPhone from "../../../Assets/Slider/Open-phone-slider/GOLD/ASTRONAUT-ARC.png";
+import goldOpen2_bgPhone from "../../../Assets/Slider/Open-phone-slider/GOLD/BASKET-PLAYER-ARC.png";
+import goldOpen3_bgPhone from "../../../Assets/Slider/Open-phone-slider/GOLD/ELITE-ARC.png";
+import goldOpen4_bgPhone from "../../../Assets/Slider/Open-phone-slider/GOLD/ARCADE-ARC.png";
+import goldOpen5_bgPhone from "../../../Assets/Slider/Open-phone-slider/GOLD/PAJAMA-ARC.png";
+import diamondOpen1_bgPhone from "../../../Assets/Slider/Open-phone-slider/DIAMOND/ROYAL-STAR-ARC.png";
+import diamondOpen2_bgPhone from "../../../Assets/Slider/Open-phone-slider/DIAMOND/STARSHIP-ARC.png";
+import diamondOpen3_bgPhone from "../../../Assets/Slider/Open-phone-slider/DIAMOND/SAKURA-ARC.png";
+import epicOpen1_bgPhone from "../../../Assets/Slider/Open-phone-slider/EPIC/JUSTICE-ARC.png";
+import epicOpen2_bgPhone from "../../../Assets/Slider/Open-phone-slider/EPIC/MASKED-DEVIL-ARC.png";
+import legendOpen1_bgPhone from "../../../Assets/Slider/Open-phone-slider/LEGENDARY/THE-LIGHT-KNIGHT-ARC.png";
+import legendOpen2_bgPhone from "../../../Assets/Slider/Open-phone-slider/LEGENDARY/GOLDEN-ARC.png";
 function Slider({ darkMode }) {
   const images = [
     silver3,
@@ -81,9 +89,9 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Silver",
-      background: silverOpen3_bg,
       star: [1],
       name: "ARC",
+      phonebg: silverOpen3_bgPhone,
     },
     {
       num: 1,
@@ -95,9 +103,9 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Silver",
-      background: silverOpen2_bg,
       star: [1],
       name: "ACADEMY ARC",
+      phonebg: silverOpen2_bgPhone,
     },
     {
       num: 2,
@@ -109,9 +117,9 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Silver",
-      background: silverOpen1_bg,
       star: [1],
       name: "PIZZA DELIVERY ARC",
+      phonebg: silverOpen1_bgPhone,
     },
     {
       num: 3,
@@ -123,9 +131,9 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Silver",
-      background: silverOpen4_bg,
       star: [1],
       name: "NURSE ARC",
+      phonebg: silverOpen4_bgPhone,
     },
     {
       num: 4,
@@ -137,10 +145,10 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Silver",
-      background: silverOpen5_bg,
       star: [1],
       name: "OFFICER ARC",
       class: "officer",
+      phonebg: silverOpen5_bgPhone,
     },
     {
       num: 5,
@@ -152,9 +160,9 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Gold",
-      background: goldOpen1_bg,
       star: [1, 2],
       name: "ASTRONAUT ARC",
+      phonebg: goldOpen1_bgPhone,
     },
     {
       num: 6,
@@ -166,9 +174,9 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Gold",
-      background: goldOpen2_bg,
       star: [1, 2],
       name: "BASKET PLAYER ARC",
+      phonebg: goldOpen2_bgPhone,
     },
     {
       num: 7,
@@ -180,13 +188,13 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Gold",
-      background: goldOpen3_bg,
       star: [1, 2],
       name: "ELITE ARC",
+      phonebg: goldOpen3_bgPhone,
     },
     {
       num: 8,
-      img: goldOpen3,
+      img: goldOpen4,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
@@ -194,13 +202,13 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Gold",
-      background: goldOpen3_bg,
       star: [1, 2],
       name: "ARCADE ARC",
+      phonebg: goldOpen4_bgPhone,
     },
     {
       num: 9,
-      img: goldOpen3,
+      img: goldOpen5,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
@@ -208,9 +216,9 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Gold",
-      background: goldOpen3_bg,
       star: [1, 2],
       name: "PAJAMA ARC",
+      phonebg: goldOpen5_bgPhone,
     },
     {
       num: 10,
@@ -222,9 +230,8 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Diamond",
-      background: diamondOpen2_bg,
       star: [1, 2, 3],
-
+      phonebg: diamondOpen2_bgPhone,
       name: "STARSHIP ARC",
     },
     {
@@ -237,13 +244,13 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Diamond",
-      background: diamondOpen1_bg,
       star: [1, 2, 3],
+      phonebg: diamondOpen1_bgPhone,
       name: "ROYAL STAR ARC",
     },
     {
       num: 12,
-      img: diamondOpen1,
+      img: diamondOpen3,
       desc: ` Mae has always been a good kitty, getting straight A's, while even
             running her highschool bookclub on the side. She always pushes
               herself to do the best she can in everything that she does. She
@@ -251,8 +258,8 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Diamond",
-      background: diamondOpen1_bg,
       star: [1, 2, 3],
+      phonebg: diamondOpen3_bgPhone,
       name: "SAKURA ARC",
     },
     {
@@ -265,8 +272,8 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Epic",
-      background: epicOpen1_bg,
       star: [1, 2, 3, 4],
+      phonebg: epicOpen1_bgPhone,
       name: "JUSTICE ARC",
     },
     {
@@ -279,8 +286,8 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Epic",
-      background: epicOpen2_bg,
       star: [1, 2, 3, 4],
+      phonebg: epicOpen2_bgPhone,
       name: "MASKED DEVIL ARC",
     },
     {
@@ -293,7 +300,7 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Legendary",
-      background: legendOpen1_bg,
+      phonebg: legendOpen1_bgPhone,
       star: [1, 2, 3, 4, 5],
       name: "THE LIGHT KNIGHT ARC",
     },
@@ -307,7 +314,7 @@ function Slider({ darkMode }) {
               does know that she'll achieve whatever she puts her mind to, no
               matter what!"`,
       color: "Legendary",
-      background: legendOpen2_bg,
+      phonebg: legendOpen2_bgPhone,
       star: [1, 2, 3, 4, 5],
       name: "GOLDEN ARC",
     },
@@ -335,7 +342,7 @@ function Slider({ darkMode }) {
   const [color, setColor] = useState("");
   const [img, setImg] = useState("");
   const [dark, setDark] = useState("");
-  const [bg, setBg] = useState("");
+  const [phoneImg, setPhoneImg] = useState("");
   const [starA, setStar] = useState([]);
   const [name, setName] = useState("");
   const [class2, setClass] = useState("");
@@ -352,9 +359,9 @@ function Slider({ darkMode }) {
         setDesc(elem.desc);
         setColor(elem.color);
         setImg(elem.img);
-        setBg(elem.background);
         setStar(elem.star);
         setName(elem.name);
+        setPhoneImg(elem.phonebg);
         if (elem.class != null) {
           setClass(elem.class);
         }
@@ -394,15 +401,36 @@ function Slider({ darkMode }) {
           }}
           className="fas fa-times close-box"
         ></i>
-        <div className="left-slider-box">
-          <img src={bg} alt="" className="abs-img-bg" />
-          <img className={`girl-img ${class2}`} src={img} alt="" />
-        </div>
-        <div className="right-slider-box">
-          <div className="arc-title">
+        <div className="mobile-img-slider mobile-top">
+          <div className=" arc-title">
             <h1 className={`arc-name ${darkMode ? "dark-p" : ""}`}>{name}</h1>
           </div>
           <div className="rarity-div">
+            <p className={`rarity-box ${color}`}>{`${color} Arc`}</p>
+            <div className="star-div">
+              {starA.map((elem, index) => {
+                return <img src={star} key={index} alt="" />;
+              })}
+            </div>
+          </div>
+        </div>
+        <div className="left-slider-box">
+          <img
+            className={`girl-img desktop-img-slider ${class2}`}
+            src={img}
+            alt=""
+          />
+          <img
+            className={`girl-img mobile-img-slider ${class2}`}
+            src={phoneImg}
+            alt=""
+          />
+        </div>
+        <div className="right-slider-box">
+          <div className="desktop-img-slider arc-title">
+            <h1 className={`arc-name ${darkMode ? "dark-p" : ""}`}>{name}</h1>
+          </div>
+          <div className="desktop-img-slider rarity-div">
             <p className={`rarity-box ${color}`}>{`${color} Arc`}</p>
             <div className="star-div">
               {starA.map((elem, index) => {

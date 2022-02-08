@@ -102,7 +102,7 @@ function Header({ darkSet, click }) {
             }}
             className="bottom-border soon"
           >
-            <a href="#">MYSTERY BOX</a>
+            <Link to="/MysteryBox">MYSTERY BOX</Link>
           </li>
           <li
             onClick={() => {

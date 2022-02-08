@@ -1,6 +1,7 @@
 .home,
 .shape-wrapper,
-.token {
+.token,
+.mystery-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;

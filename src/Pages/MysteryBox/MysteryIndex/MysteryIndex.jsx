@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./MysteryIndex.css";
 import box from "../../../Assets/mystrey.png";
 import currency from "../../../Assets/currency.png";
-function MysteryIndex() {
+function MysteryIndex({ dark }) {
   const handleChange = (e) => {
     if (e.target.value > 10) {
       return (e.target.value = 10);
@@ -14,13 +14,13 @@ function MysteryIndex() {
         <img src={box} alt="" />
       </div>
       <div className="right-mystery-index">
-        <h1>COMMON MYSTERY BOX</h1>
-        <h1 className="sup">
+        <h1 className={`${dark ? "light-blue" : ""}`}>COMMON MYSTERY BOX</h1>
+        <h1 className={`sup ${dark ? "light-blue" : ""}`}>
           10.00 BUSD <sup>per box</sup> <span className="grey">-$10 USD</span>
         </h1>
         <div className="mid-index">
           <div className="quantity-index num1">
-            <p>Quantity</p>
+            <p className={`${dark ? "white" : ""}`}>Quantity</p>
             <input
               maxlength="2"
               onChange={handleChange}
@@ -32,12 +32,14 @@ function MysteryIndex() {
             <button className="index-btn">APPROVE BUSD</button>
           </div>
           <div className="quantity-index">
-            <p>Buy with</p>
+            <p className={`${dark ? "white" : ""}`}>Buy with</p>
             <img src={currency} alt="" className="currency" />
             <button className="index-btn">Buy with BUSD</button>
           </div>
         </div>
-        <h1>WHAT RARITIES INSIDE/DROP RATE</h1>
+        <h1 className={`${dark ? "light-blue" : ""}`}>
+          WHAT RARITIES INSIDE/DROP RATE
+        </h1>
         <div className="index-rarity-div">
           <p className="index-rarity silver-rarity">Silver Arcane</p>
           <p className="index-rarity gold-rarity">Gold Arcane</p>
@@ -45,7 +47,9 @@ function MysteryIndex() {
           <p className="index-rarity diamond-rarity">Diamond Arcane</p>
           <p className="index-rarity challenger-rarity">Challenger Arcane</p>
         </div>
-        <p>Rates slightly increased when with Arcane Coin</p>
+        <p className={`${dark ? "white" : ""}`}>
+          Rates slightly increased when with Arcane Coin
+        </p>
       </div>
     </div>
   );

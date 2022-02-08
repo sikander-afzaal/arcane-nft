@@ -3,12 +3,12 @@ import MysteryHero from "./Mystery-Hero/Mystery-Hero.jsx";
 import Slider from "./MysterySlider/Slider.jsx";
 import MysteryIndex from "./MysteryIndex/MysteryIndex.jsx";
 import "./MysteryBox.css";
-function MysteryBox() {
+function MysteryBox({ dark }) {
   return (
     <div className="mystery-box">
       <MysteryHero />
-      <MysteryIndex />
-      <Slider />
+      <MysteryIndex dark={dark} />
+      <Slider darkMode={dark} />
     </div>
   );
 }

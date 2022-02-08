@@ -535,7 +535,7 @@ function Slider({ darkMode }) {
           );
         })}
       </Splide>
-      <button data-aos="fade-up">
+      <button>
         <img src={letter} alt="" />
         Buy MysteryBox
       </button>

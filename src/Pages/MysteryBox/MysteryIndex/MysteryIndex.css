@@ -126,6 +126,9 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+.light-blue {
+  color: #13c6f7 !important;
+}
 @media screen and (max-width: 1210px) {
   .right-mystery-index h1 {
     font-size: 2.5rem;

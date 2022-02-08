@@ -1,4 +1,5 @@
 .mystery-box {
   min-height: 100vh;
   height: auto;
+  gap: 6rem;
 }

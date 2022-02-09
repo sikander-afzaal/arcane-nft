@@ -3,9 +3,19 @@ import "./MysteryIndex.css";
 import box from "../../../Assets/mystrey.png";
 import currency from "../../../Assets/currency.png";
 function MysteryIndex({ dark }) {
-  const handleChange = (e) => {
-    if (e.target.value > 10) {
-      return (e.target.value = 10);
+  const [value, setValue] = useState(0);
+  const increment = (e) => {
+    if (value < 10 && value >= 0) {
+      setValue((prev) => {
+        return prev + 1;
+      });
+    }
+  };
+  const decrement = (e) => {
+    if (value <= 10 && value > 0) {
+      setValue((prev) => {
+        return prev - 1;
+      });
     }
   };
   return (
@@ -21,14 +31,24 @@ function MysteryIndex({ dark }) {
         <div className="mid-index">
           <div className="quantity-index num1">
             <p className={`${dark ? "white" : ""}`}>Quantity</p>
-            <input
-              maxlength="2"
-              onChange={handleChange}
-              min="0"
-              max="10"
-              type="number"
-              className="input-quan"
-            />
+            <div className="input-div-index">
+              <input
+                maxLength="2"
+                value={value}
+                min="0"
+                max="10"
+                type="tel"
+                readOnly
+                className="input-quan"
+              />
+              <p onClick={increment} className="increment">
+                {"<"}
+              </p>
+              <p onClick={decrement} className="decrement">
+                {">"}
+              </p>
+            </div>
+
             <button className="index-btn">APPROVE BUSD</button>
           </div>
           <div className="quantity-index">
@@ -47,9 +67,6 @@ function MysteryIndex({ dark }) {
           <p className="index-rarity diamond-rarity">Diamond Arcane</p>
           <p className="index-rarity challenger-rarity">Challenger Arcane</p>
         </div>
-        <p className={`${dark ? "white" : ""}`}>
-          Rates slightly increased when with Arcane Coin
-        </p>
       </div>
     </div>
   );

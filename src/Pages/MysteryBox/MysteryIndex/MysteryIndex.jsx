@@ -48,8 +48,6 @@ function MysteryIndex({ dark }) {
                 {">"}
               </p>
             </div>
-
-            <button className="index-btn">APPROVE BUSD</button>
           </div>
           <div className="quantity-index">
             <p className={`${dark ? "white" : ""}`}>Buy with</p>

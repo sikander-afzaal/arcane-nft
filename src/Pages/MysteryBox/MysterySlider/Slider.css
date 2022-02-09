@@ -1,6 +1,7 @@
 .slider2 * {
-  overflow: visible;
+  overflow: visible !important;
 }
+
 .slider2 {
   display: flex;
   justify-content: center;
@@ -41,6 +42,7 @@
   z-index: -1;
   max-height: 580px;
   height: 100%;
+  display: none;
 }
 
 .down-box {
@@ -56,8 +58,11 @@
   position: absolute;
   opacity: 0;
   z-index: -1;
+  display: none;
 }
-
+.display-flex {
+  display: flex !important;
+}
 .down {
   opacity: 1;
   z-index: 4;

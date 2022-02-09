@@ -10,7 +10,7 @@
   width: 100%;
   height: auto;
   /* min-height: 1200px; */
-  overflow-y: hidden;
+  overflow: visible;
   position: relative;
   padding-bottom: 2rem;
 }

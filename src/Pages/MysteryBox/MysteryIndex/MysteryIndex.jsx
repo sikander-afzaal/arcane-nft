@@ -19,6 +19,17 @@ function MysteryIndex({ dark }) {
       });
     }
   };
+  const handleChange = (e) => {
+    const val = e.target.value;
+    setValue((prev) => {
+      prev += val;
+    });
+    if (val > 10) {
+      setValue(10);
+    } else if (val < 0) {
+      setValue(0);
+    }
+  };
   return (
     <div className="mystery-index">
       <img src={letterA} alt="" className="letter-abs" />
@@ -40,7 +51,7 @@ function MysteryIndex({ dark }) {
                 min="0"
                 max="10"
                 type="tel"
-                readOnly
+                onChange={handleChange}
                 className="input-quan"
               />
               <p onClick={increment} className="increment">

@@ -151,7 +151,7 @@
   border-radius: 25px;
   font-size: 1.6rem;
   color: white !important;
-  margin: 20px 0px;
+  margin: 0px 0px;
 }
 .silver-rarity {
   background: linear-gradient(to top, rgba(255, 255, 255, 0), #cdced1);
@@ -186,9 +186,9 @@
 @media screen and (max-width: 1000px) {
   .letter-abs {
     position: absolute;
-    top: 55%;
-    right: -4%;
-    max-width: 30%;
+    top: -7%;
+    right: -2%;
+    max-width: 21%;
     object-fit: contain;
   }
   .left-mystery-index img {
@@ -233,9 +233,6 @@
   }
 }
 @media screen and (max-width: 652px) {
-  .letter-abs {
-    display: none;
-  }
 }
 @media screen and (max-width: 600px) {
   .index-rarity-div {
@@ -245,10 +242,12 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 504px) {
-  /* .right-mystery-index h1 {
-    font-size: 2.5rem;
-  } */
+@media screen and (max-width: 532px) {
+  .letter-abs {
+    top: -6%;
+    right: -1%;
+    max-width: 22%;
+  }
 }
 @media screen and (max-width: 447px) {
   .sup {

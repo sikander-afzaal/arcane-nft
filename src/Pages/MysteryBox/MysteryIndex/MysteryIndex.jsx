@@ -57,15 +57,17 @@ function MysteryIndex({ dark }) {
             <button className="index-btn">Buy with BUSD</button>
           </div>
         </div>
-        <h1 className={`${dark ? "white" : ""}`}>
-          WHAT RARITIES INSIDE/DROP RATE
-        </h1>
-        <div className="index-rarity-div">
-          <p className="index-rarity silver-rarity">Silver Arcane</p>
-          <p className="index-rarity gold-rarity">Gold Arcane</p>
-          <p className="index-rarity epic-rarity">Epic Arcane</p>
-          <p className="index-rarity diamond-rarity">Diamond Arcane</p>
-          <p className="index-rarity challenger-rarity">Challenger Arcane</p>
+        <div className="bottom-right-index">
+          <h1 className={`${dark ? "white" : ""}`}>
+            WHAT RARITIES INSIDE/DROP RATE
+          </h1>
+          <div className="index-rarity-div">
+            <p className="index-rarity silver-rarity">Silver Arcane</p>
+            <p className="index-rarity gold-rarity">Gold Arcane</p>
+            <p className="index-rarity epic-rarity">Epic Arcane</p>
+            <p className="index-rarity diamond-rarity">Diamond Arcane</p>
+            <p className="index-rarity challenger-rarity">Challenger Arcane</p>
+          </div>
         </div>
       </div>
     </div>

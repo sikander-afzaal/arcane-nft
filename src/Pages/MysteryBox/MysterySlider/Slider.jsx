@@ -455,7 +455,6 @@ function Slider({ darkMode }) {
         </div>
       </div>
       <div
-        data-aos="fade-down"
         style={{ marginBottom: "6rem" }}
         className={`find-top ${darkMode ? "top-dark" : ""}`}
       >

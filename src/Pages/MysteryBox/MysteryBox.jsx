@@ -5,10 +5,12 @@ import MysteryIndex from "./MysteryIndex/MysteryIndex.jsx";
 import "./MysteryBox.css";
 function MysteryBox({ dark }) {
   return (
-    <div className={`mystery-box ${dark ? "bg-black" : ""}`}>
+    <div className="mystery-box">
       <MysteryHero />
-      <MysteryIndex dark={dark} />
-      <Slider darkMode={dark} />
+      <div className={`white-box ${dark ? "bg-black" : ""}`}>
+        <MysteryIndex dark={dark} />
+        <Slider darkMode={dark} />
+      </div>
     </div>
   );
 }

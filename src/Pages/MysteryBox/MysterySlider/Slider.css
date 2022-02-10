@@ -50,7 +50,7 @@
 .down-box {
   transform: translate(-50%, -50%);
   opacity: 1;
-  z-index: 10;
+  z-index: 6;
 }
 .overlay-2-2 {
   background-color: rgba(0, 0, 0, 0.7);
@@ -112,6 +112,7 @@
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
+  background-color: inherit;
 }
 .bio-div h1 {
   color: black;

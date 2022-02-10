@@ -250,8 +250,8 @@
     font-size: 2.5rem;
   } */
 }
-@media screen and (max-width: 415px) {
-  /* .right-mystery-index h1 {
-    font-size: 2rem;
-  } */
+@media screen and (max-width: 447px) {
+  .sup {
+    font-size: 2.1rem !important;
+  }
 }

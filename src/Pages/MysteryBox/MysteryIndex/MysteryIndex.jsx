@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./MysteryIndex.css";
 import box from "../../../Assets/mystrey.png";
 import currency from "../../../Assets/currency.png";
+import letterA from "../../../Assets/Token/Elements-59.png";
 function MysteryIndex({ dark }) {
   const [value, setValue] = useState(0);
   const increment = (e) => {
@@ -20,12 +21,13 @@ function MysteryIndex({ dark }) {
   };
   return (
     <div className="mystery-index">
+      <img src={letterA} alt="" className="letter-abs" />
       <div className="left-mystery-index">
         <img src={box} alt="" />
       </div>
       <div className="right-mystery-index">
-        <h1 className={`${dark ? "light-blue" : ""}`}>COMMON MYSTERY BOX</h1>
-        <h1 className={`sup ${dark ? "light-blue" : ""}`}>
+        <h1 className={`${dark ? "white" : ""}`}>COMMON MYSTERY BOX</h1>
+        <h1 className={`sup ${dark ? "white" : ""}`}>
           10.00 BUSD <sup>per box</sup> <span className="grey">-$10 USD</span>
         </h1>
         <div className="mid-index">
@@ -55,7 +57,7 @@ function MysteryIndex({ dark }) {
             <button className="index-btn">Buy with BUSD</button>
           </div>
         </div>
-        <h1 className={`${dark ? "light-blue" : ""}`}>
+        <h1 className={`${dark ? "white" : ""}`}>
           WHAT RARITIES INSIDE/DROP RATE
         </h1>
         <div className="index-rarity-div">

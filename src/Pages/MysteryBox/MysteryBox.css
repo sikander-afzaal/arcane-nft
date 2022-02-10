@@ -2,8 +2,23 @@
   min-height: 100vh;
   height: auto;
   gap: 6rem;
+  width: 78%;
+  background-color: white;
+  border-radius: 35px;
+  margin: 2rem 0rem;
   overflow: visible;
+  box-shadow: 0px 0px 50px -20px #00f6ff;
 }
-.mystery-box * {
-  overflow: visible !important;
+.bg-black {
+  background-color: #262626;
+}
+@media screen and (max-width: 1600px) {
+  .mystery-box {
+    width: 93%;
+  }
+}
+@media screen and (max-width: 1414px) {
+  .mystery-box {
+    width: 95%;
+  }
 }

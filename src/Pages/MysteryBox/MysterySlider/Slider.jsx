@@ -347,17 +347,15 @@ function Slider({ darkMode }) {
   const [starA, setStar] = useState([]);
   const [name, setName] = useState("");
   const [class2, setClass] = useState("");
-  const [display, setDisplay] = useState(false);
+  const [overflow, setOverflow] = useState(false);
   const clickHandler = (e) => {
     if (darkMode === true) {
       setDark("dark");
     } else {
       setDark("");
     }
-    setDisplay(true);
-    setTimeout(() => {
-      setOpen(true);
-    }, 200);
+    setOverflow(true);
+    setOpen(true);
 
     const dataSet = e.target.dataset.num;
     data.forEach((elem) => {
@@ -375,17 +373,9 @@ function Slider({ darkMode }) {
     });
   };
   return (
-    <div className="slider2">
-      <div
-        className={`overlay-2 ${open ? "down" : ""} ${
-          display ? "display-flex" : ""
-        }`}
-      ></div>
-      <div
-        className={`open-box-slider ${display ? "display-flex" : ""} ${
-          open ? `down-box ${dark}` : ""
-        }`}
-      >
+    <div className={`slider2 ${overflow ? "overflow-slider" : ""}`}>
+      <div className={`overlay-2-2 ${open ? "down" : ""} `}></div>
+      <div className={`open-box-slider2 ${open ? `down-box ${dark}` : ""}`}>
         <i
           onClick={() => {
             showEye((prev) => {
@@ -410,11 +400,8 @@ function Slider({ darkMode }) {
 
               return copy;
             });
+            setOverflow(false);
             setOpen(false);
-            setTimeout(() => {
-              setDisplay(false);
-            }, 1000);
-            console.log(view);
           }}
           className="fas fa-times close-box"
         ></i>
